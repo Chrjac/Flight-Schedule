@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="FlightSchedule.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlightSchedule"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="206*"/>
+            <ColumnDefinition Width="1161*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="FlightData" HorizontalAlignment="Left" Margin="39,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="408" Width="374" IsReadOnly="True" Grid.Column="1"/>
+        <Button x:ConnectionId='1' Content="Button" HorizontalAlignment="Left" Margin="829,420,0,0" VerticalAlignment="Top"                      Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,25,0,0" TextWrapping="Wrap" Text="Raw Datafile" VerticalAlignment="Top" Height="27" Width="173" FontSize="16" Grid.Column="1"/>
+        <ComboBox x:Name="AirportBox" HorizontalAlignment="Left" Margin="90,116,0,0" VerticalAlignment="Top" Width="136" IsSynchronizedWithCurrentItem="False" PlaceholderText="Velg Flyplass" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="ArrivalBox" HorizontalAlignment="Left" Margin="90,172,0,0" VerticalAlignment="Top" Width="136" PlaceholderText="Velg Ank/Avg" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,225,0,0" TextWrapping="Wrap" Text="Request tok:" VerticalAlignment="Top" Width="68"/>
+        <TextBlock x:Name="TimeSpent" HorizontalAlignment="Left" Margin="101,225,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="162,226,0,0" TextWrapping="Wrap" Text="Millisekkunder" VerticalAlignment="Top" FontSize="10" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="StatusText" HorizontalAlignment="Left" Margin="340,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Height="22" FontSize="14" Grid.Column="1"/>
+        <ListView x:ConnectionId='2' x:Name="ListView" Grid.Column="1" HorizontalAlignment="Left" Height="408" Margin="432,47,0,0" VerticalAlignment="Top" Width="375" Foreground="White" Background="#FF3E3E3E" Opacity="0.75" BorderBrush="#FF898989"                         />
+        <Hub x:Name="HubSection" Header="Hub" HorizontalAlignment="Left" Margin="23,513,0,0" VerticalAlignment="Top" Grid.Column="1" Visibility="Collapsed" >
+            <HubSection x:Name="hubhead" Header="HubSection 0">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Name="hubhead1" Header="HubSection 1">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Name="hubhead2" Header="HubSection 1">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Name="hubhead3" Header="HubSection 1">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <TextBlock Visibility="Collapsed" x:Name="ToBox" Grid.Column="1" HorizontalAlignment="Left" Margin="390,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
+        <TextBlock Visibility="Collapsed" x:Name="TimeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="66,629,0,0" TextWrapping="Wrap" Text="Tid" VerticalAlignment="Top" Height="26" Width="87"/>
+        <TextBlock Visibility="Collapsed" x:Name="FromBox" Grid.Column="1" HorizontalAlignment="Left" Margin="233,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
+        <TextBlock Visibility="Collapsed" x:Name="AirlineBox" Grid.Column="1" HorizontalAlignment="Left" Margin="562,629,0,0" TextWrapping="Wrap" Text="Flyselskap" VerticalAlignment="Top" Height="26" Width="87"/>
+
+    </Grid>
+</Page>
+

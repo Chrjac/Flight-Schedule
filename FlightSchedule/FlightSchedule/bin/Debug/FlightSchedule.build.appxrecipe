@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CHRISTIAN-PC</Machine>
+    <WindowsUser>Christian</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>51ae8fbf-b6ce-4258-a0b6-c9bf8e3cac74</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.exe">
+      <PackagePath>FlightSchedule.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll">
+      <PackagePath>AviNorRequest.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\airlines.xml">
+      <PackagePath>airlines.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\airports.xml">
+      <PackagePath>airports.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
