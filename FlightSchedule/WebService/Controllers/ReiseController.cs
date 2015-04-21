@@ -82,8 +82,9 @@ namespace WebService.Controllers
 
             db.Reises.Add(reise);
             db.SaveChanges();
-
+            db.Entry(reise).GetDatabaseValues();
             return CreatedAtRoute("DefaultApi", new { id = reise.Id }, reise);
+          
         }
 
         // DELETE: api/Reise/5

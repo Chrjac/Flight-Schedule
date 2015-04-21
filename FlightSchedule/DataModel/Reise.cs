@@ -7,6 +7,10 @@ namespace DataModel
 {
     public partial class Reise
     {
+        public Reise()
+        {
+
+        }
             public int Id { get; set; }
             public string Navn { get; set; }
             public string Dato { get; set; }

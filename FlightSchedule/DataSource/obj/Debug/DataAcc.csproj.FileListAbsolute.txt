@@ -10,3 +10,15 @@ C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataSource\bi
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataAcc.csprojResolveAssemblyReference.cache
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataSource.dll
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataSource.pdb
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataSource.dll.config
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataSource.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataSource.pdb
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataModel.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\EntityFramework.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\EntityFramework.SqlServer.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataModel.pdb
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\EntityFramework.xml
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\EntityFramework.SqlServer.xml
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataAcc.csprojResolveAssemblyReference.cache
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataSource.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataSource.pdb

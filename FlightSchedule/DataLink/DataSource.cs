@@ -26,7 +26,7 @@ namespace DataLink
 
         public static async Task<IEnumerable<Reise>> GetReisesAsync()
         {
-            if (null == _DataSource._reises)
+           // if (_DataSource._reises == null) //Datacaching!!!!!!!! styr unna.
                 _DataSource._reises = new ObservableCollection<Reise>(await _DataSource.GetAllReisesAsync());
 
             return _DataSource.Reises;
@@ -52,6 +52,30 @@ namespace DataLink
             _DataSource._reises.Remove(_DataSource._reises.First(c => c.Id == aReise.Id));
             _DataSource._reises.Add(aReise);
         }
+        public static async Task<Reise>AddReisesAsync(Reise aReise)
+        {
+            // to update the database, if OK, then proceed to update the local data
+            const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
+            var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
+            var jsonSerializer = new DataContractJsonSerializer(typeof(Reise), jsonSerializerSettings);
+
+            var stream = new MemoryStream();
+            jsonSerializer.WriteObject(stream, aReise);
+            stream.Position = 0;   // Make sure to rewind the cursor before you try to read the stream
+            var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
+
+            var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
+            var response = await client.PostAsync("Reise/", content);
+
+            response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong
+            
+            // a smarter approach would be to update the element (remove/add is brute force)
+            if (_DataSource._reises != null) {
+                _DataSource._reises.Clear();
+            }
+           
+            return aReise;
+        }
         public async Task<IEnumerable<Reise>> GetAllReisesAsync()
         {
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
@@ -66,8 +90,10 @@ namespace DataLink
             var jsonSerializer = new DataContractJsonSerializer(typeof(Reise[]), jsonSerializerSettings);
 
             var stream = await response.Content.ReadAsStreamAsync();
-            string x = await response.Content.ReadAsStringAsync();
+           // string x = await response.Content.ReadAsStringAsync();
             return (Reise[])jsonSerializer.ReadObject(stream);
+            
+            
             
             
         }

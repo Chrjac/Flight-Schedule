@@ -13,7 +13,7 @@
             <ColumnDefinition Width="1161*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="FlightData" HorizontalAlignment="Left" Margin="39,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="408" Width="374" IsReadOnly="True" Grid.Column="1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="829,420,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="829,442,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="39,25,0,0" TextWrapping="Wrap" Text="Raw Datafile" VerticalAlignment="Top" Height="27" Width="173" FontSize="16" Grid.Column="1"/>
         <ComboBox x:Name="AirportBox" HorizontalAlignment="Left" Margin="90,116,0,0" VerticalAlignment="Top" Width="136" IsSynchronizedWithCurrentItem="False" PlaceholderText="Velg Flyplass" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="ArrivalBox" HorizontalAlignment="Left" Margin="90,172,0,0" VerticalAlignment="Top" Width="136" PlaceholderText="Velg Ank/Avg" Grid.ColumnSpan="2"/>
@@ -48,8 +48,9 @@
         <TextBlock Visibility="Collapsed" x:Name="TimeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="66,629,0,0" TextWrapping="Wrap" Text="Tid" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="FromBox" Grid.Column="1" HorizontalAlignment="Left" Margin="233,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="AirlineBox" Grid.Column="1" HorizontalAlignment="Left" Margin="562,629,0,0" TextWrapping="Wrap" Text="Flyselskap" VerticalAlignment="Top" Height="26" Width="87"/>
-        <Button x:Name="SqlButton" Content="Sql Test" Grid.Column="1" HorizontalAlignment="Left" Margin="829,368,0,0" VerticalAlignment="Top" Tapped="SqlButton_Tapped"/>
-        <TextBlock x:Name="SqlStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="832,42,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="324" Width="293"/>
+        <Button x:Name="SqlButton" Content="Query Database" Grid.Column="1" HorizontalAlignment="Left" Margin="829,363,0,0" VerticalAlignment="Top" Tapped="SqlButton_Tapped"/>
+        <ListView x:Name="SqlList" Grid.Column="8" HorizontalAlignment="Left" Height="276" Margin="654,482,0,0" VerticalAlignment="Top" Width="471" Grid.ColumnSpan="8"/>
+        <Button Content="Lagre til Database" Grid.Column="1" HorizontalAlignment="Left" Margin="829,400,0,0" VerticalAlignment="Top" Tapped="Button_Tapped"/>
 
     </Grid>
 </Page>

@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -59,17 +60,7 @@ namespace FlightSchedule
             string XmlSearchResult = XmlSearch.ElementAt(0);
             string i = XmlSearchResult;
 
-
-            if (ArrivalDeparture == 1)
-            {
-                ad = "D";
-
-            }
-            else
-            {
-                ad = "A";
-
-            }
+            ad = (ArrivalDeparture == 1) ? "D" : "A";
 
             string x = AviNorRequest.Request.DoRequest(i, ad);
 
@@ -93,7 +84,40 @@ namespace FlightSchedule
                     if (test == airline)
                     {
                         test = Alcheck.Attribute("name").Value;
-                        ListView.Items.Add(schedule_time_sub2 + "          " + flightId + "          " + airport + "          " + test);
+
+                        string from;
+                        string to;
+                        if (ad == "A") {
+                            from = airport;
+                            to = AirportBox.SelectedValue as string;
+                        }
+                        else
+                        {
+                            from = AirportBox.SelectedValue as string;
+                            to = airport;
+                        }
+
+                        var a = new ListViewItem();
+                        //a.Tag = new {
+                        //    FlightId = flightId,
+                        //    To = to,
+                        //    From = from,
+                        //    Airline = test,
+                        //    Time = schedule_time_sub2
+
+                        //};
+                        
+                        a.Tag = new Reise
+                        {
+                            FlightId = flightId,
+                            Til = to,
+                            Fra = from,
+                            Flyselskap = test,
+                            Tid = schedule_time_sub2
+
+                        };
+                        a.Content = schedule_time_sub2 + "          " + flightId + "          " + airport + "          " + test;
+                        ListView.Items.Add(a);
                     }
                     else
                     {
@@ -133,14 +157,16 @@ namespace FlightSchedule
             string x;
             string x1;
             int ArrivalDeparture = ArrivalBox.SelectedIndex;
-            string ListText = ListView.SelectedItems[0].ToString();
+            var a = (ListViewItem)ListView.SelectedItem;
+            var ListText = a.Content.ToString();
+
             HubSection.Header = ListText.Substring(15, 18);
             hubhead.Header = ListText.Substring(0, 8);
             hubhead1.Header = AirportBox.SelectedValue;
             x = ListText.Substring(30);
             x1 = x.Substring(3, 4);
             hubhead2.Header = x1;
-            hubhead3.Header = ListText.Substring(40);
+          
             if (ArrivalDeparture == 1){
                 FromBox.Text = "Fra Flyplass";
                 ToBox.Text = "Til Flyplass";
@@ -159,18 +185,40 @@ namespace FlightSchedule
 
         private void SqlButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-          /*  var reise = new Reise() {Navn = "Oslo - Hellas", Dato = "21.04.15", Tid = "14:00", FlightId = "YF12345", Fra = "Hellas", Til = "Oslo", Flyselskap = "Norwegian"};
-            DataSource.UpdateReisesAsync(reise);
-            SqlStatus.Text = "Database updated with Data";
-           */
+            /*  var reise = new Reise() {Navn = "Oslo - Hellas", Dato = "21.04.15", Tid = "14:00", FlightId = "YF12345", Fra = "Hellas", Til = "Oslo", Flyselskap = "Norwegian"};
+              DataSource.UpdateReisesAsync(reise);
+              SqlStatus.Text = "Database updated with Data";
+             */
 
-              FITTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
+            //List<Reise> reiser = new List<Reise>();
+            UpdateSqlList();
+        }
+        private async void UpdateSqlList()
+        {
+            SqlList.Items.Clear();
+            var b = await DataSource.GetReisesAsync();
+
+            foreach (var item in b)
+            {
+                var a = new ListViewItem();
+                a.Tag = item.Id;
+                a.Content = item.Dato + item.Tid + item.FlightId + item.Fra + item.Til + item.Flyselskap;
+                SqlList.Items.Add(a);
+                // SqlList.Items.Add(item.Dato + item.Tid + item.FlightId + item.Fra + item.Til + item.Flyselskap);
+            }
+        }
+        private async void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+           var a = (ListViewItem)ListView.SelectedItems[0];
+           var travel = (Reise)a.Tag;
+           travel.Navn = "Jallatur";
+           travel.Dato = DateTime.Now.ToString();
+           await DataSource.AddReisesAsync(travel);
+           UpdateSqlList();
             
-           
-           
-            
-            
+        
         }
 
     }

@@ -3,3 +3,8 @@ C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\bin
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.dll
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.pdb
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.pdb
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.dll
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.pdb

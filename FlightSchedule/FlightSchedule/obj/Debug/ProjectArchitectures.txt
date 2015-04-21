@@ -1,5 +1,5 @@
-C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\AviNorRequest.csproj;neutral
-C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataLink\DataLink.csproj;neutral
-C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\DataModel.csproj;neutral
-C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\DataModel.csproj;neutral
-C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\FlightSchedule.csproj;neutral
+F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\AviNorRequest.csproj;neutral
+F:\Git\Flight-Schedule\FlightSchedule\DataLink\DataLink.csproj;neutral
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\DataModel.csproj;neutral
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\DataModel.csproj;neutral
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\FlightSchedule.csproj;neutral
