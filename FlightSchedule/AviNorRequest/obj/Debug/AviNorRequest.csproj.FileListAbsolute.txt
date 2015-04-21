@@ -16,3 +16,19 @@ c:\users\christian\documents\visual studio 2013\Projects\FlightSchedule\AviNorRe
 c:\users\christian\documents\visual studio 2013\Projects\FlightSchedule\AviNorRequest\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll.CodeAnalysisLog.xml
 C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll.lastcodeanalysissucceeded
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.pdb
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.pri
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\AviNorRequest.dll
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\AviNorRequest.pdb
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\priconfig.xml
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\priconfig.xml.intermediate
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\layout.resfiles
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\layout.resfiles.intermediate
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\resources.resfiles
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\resources.resfiles.intermediate
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\pri.resfiles
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\pri.resfiles.intermediate
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\qualifiers.txt
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\MultipleQualifiersPerDimensionFound.txt

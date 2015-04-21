@@ -3,71 +3,86 @@
   <PropertyGroup>
     <Machine>CHRISTIAN-PC</Machine>
     <WindowsUser>Christian</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>51ae8fbf-b6ce-4258-a0b6-c9bf8e3cac74</PackageIdentityName>
-    <RegisteredManifestChecksum>D8D2579B0178B3E17FA7A394B5F323836B2DF7E235F1B65E1C8AAA1E77A699F4</RegisteredManifestChecksum>
+    <IntermediateOutputPath>C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>52039F09A85953A04F5EE0B9085233FC7A539F96842D01E2E19AF463C1CCF165</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>51ae8fbf-b6ce-4258-a0b6-c9bf8e3cac74_1.0.0.0_neutral__a9gjcazcjyqtc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>51ae8fbf-b6ce-4258-a0b6-c9bf8e3cac74_a9gjcazcjyqtc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>51ae8fbf-b6ce-4258-a0b6-c9bf8e3cac74</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Christian</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-04-14T08:41:33.022</Modified>
+      <Modified>2015-04-21T10:00:08.150</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.exe">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.exe">
       <PackagePath>FlightSchedule.exe</PackagePath>
-      <Modified>2015-04-14T14:35:57.524</Modified>
+      <Modified>2015-04-21T11:47:56.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll">
       <PackagePath>AviNorRequest.dll</PackagePath>
-      <Modified>2015-04-14T08:41:27.927</Modified>
+      <Modified>2015-04-21T09:24:58.948</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\airlines.xml">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataLink\bin\Debug\DataLink.dll">
+      <PackagePath>DataLink.dll</PackagePath>
+      <Modified>2015-04-21T11:45:12.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll">
+      <PackagePath>DataModel.dll</PackagePath>
+      <Modified>2015-04-21T09:34:19.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\airlines.xml">
       <PackagePath>airlines.xml</PackagePath>
-      <Modified>2015-04-14T08:14:34.577</Modified>
+      <Modified>2015-04-21T09:13:08.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\airports.xml">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\airports.xml">
       <PackagePath>airports.xml</PackagePath>
-      <Modified>2015-04-14T08:13:52.942</Modified>
+      <Modified>2015-04-21T09:13:08.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T05:01:02.000</Modified>
+      <Modified>2015-04-21T09:13:07.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T05:01:02.000</Modified>
+      <Modified>2015-04-21T09:13:07.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T05:01:02.000</Modified>
+      <Modified>2015-04-21T09:13:08.013</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T05:01:02.000</Modified>
+      <Modified>2015-04-21T09:13:08.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-04-14T08:41:30.450</Modified>
+      <Modified>2015-04-21T09:25:00.238</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-04-14T14:35:57.404</Modified>
+      <Modified>2015-04-21T10:51:35.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christian\documents\visual studio 2013\Projects\FlightSchedule\FlightSchedule\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.xr.xml">
+      <PackagePath>FlightSchedule.xr.xml</PackagePath>
+      <Modified>2015-04-21T10:00:07.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-04-14T08:41:32.991</Modified>
+      <Modified>2015-04-21T10:00:08.001</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

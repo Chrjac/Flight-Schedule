@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataLink;
+using DataModel;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -155,6 +157,21 @@ namespace FlightSchedule
               
         }
 
-       
+        private void SqlButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+          /*  var reise = new Reise() {Navn = "Oslo - Hellas", Dato = "21.04.15", Tid = "14:00", FlightId = "YF12345", Fra = "Hellas", Til = "Oslo", Flyselskap = "Norwegian"};
+            DataSource.UpdateReisesAsync(reise);
+            SqlStatus.Text = "Database updated with Data";
+           */
+
+              FITTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+            
+           
+           
+            
+            
+        }
+
     }
 }

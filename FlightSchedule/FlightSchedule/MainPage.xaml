@@ -48,6 +48,8 @@
         <TextBlock Visibility="Collapsed" x:Name="TimeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="66,629,0,0" TextWrapping="Wrap" Text="Tid" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="FromBox" Grid.Column="1" HorizontalAlignment="Left" Margin="233,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="AirlineBox" Grid.Column="1" HorizontalAlignment="Left" Margin="562,629,0,0" TextWrapping="Wrap" Text="Flyselskap" VerticalAlignment="Top" Height="26" Width="87"/>
+        <Button x:Name="SqlButton" Content="Sql Test" Grid.Column="1" HorizontalAlignment="Left" Margin="829,368,0,0" VerticalAlignment="Top" Tapped="SqlButton_Tapped"/>
+        <TextBlock x:Name="SqlStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="832,42,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="324" Width="293"/>
 
     </Grid>
 </Page>

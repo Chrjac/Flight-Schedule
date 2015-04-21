@@ -1,0 +1,5 @@
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.pdb
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.dll
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.pdb
+C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache

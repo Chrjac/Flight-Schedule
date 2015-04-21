@@ -146,6 +146,14 @@
       <Project>{fe95abdb-6f8a-42b5-b5d9-4bde9501d82c}</Project>
       <Name>AviNorRequest</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataLink\DataLink.csproj">
+      <Project>{a3196fed-7618-42d7-b574-1c8b5825e398}</Project>
+      <Name>DataLink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{77a5960a-0d9b-4a99-908e-b0352aaff231}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
