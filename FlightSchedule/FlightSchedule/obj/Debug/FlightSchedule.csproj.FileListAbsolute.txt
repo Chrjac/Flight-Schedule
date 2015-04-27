@@ -124,3 +124,8 @@ F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\qualifiers.txt
 F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\qualifiers.txt.intermediate
 F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\ProjectArchitectures.txt
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\LagredeReiser.xbf
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\LagredeReiser.g.i.cs
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\LagredeReiser.g.cs
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\LagredeReiser.xaml
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\LagredeReiser.xbf

@@ -19,8 +19,8 @@ namespace WebService.Controllers
 
         // GET: api/Reise
         public IQueryable<Reise> GetReises()
-        {
-            return db.Reises;
+        {    
+            return db.Reises; 
         }
 
         // GET: api/Reise/5
@@ -78,6 +78,7 @@ namespace WebService.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+                
             }
 
             db.Reises.Add(reise);

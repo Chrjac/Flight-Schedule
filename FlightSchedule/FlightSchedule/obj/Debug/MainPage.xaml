@@ -12,17 +12,11 @@
             <ColumnDefinition Width="206*"/>
             <ColumnDefinition Width="1161*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="FlightData" HorizontalAlignment="Left" Margin="39,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="408" Width="374" IsReadOnly="True" Grid.Column="1"/>
-        <Button x:ConnectionId='1' Content="Button" HorizontalAlignment="Left" Margin="829,442,0,0" VerticalAlignment="Top"                      Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="39,25,0,0" TextWrapping="Wrap" Text="Raw Datafile" VerticalAlignment="Top" Height="27" Width="173" FontSize="16" Grid.Column="1"/>
+        <Button x:ConnectionId='1' Content="Vis flygninger" HorizontalAlignment="Left" Margin="576,276,0,0" VerticalAlignment="Top"                      Grid.Column="1"/>
         <ComboBox x:Name="AirportBox" HorizontalAlignment="Left" Margin="90,116,0,0" VerticalAlignment="Top" Width="136" IsSynchronizedWithCurrentItem="False" PlaceholderText="Velg Flyplass" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="ArrivalBox" HorizontalAlignment="Left" Margin="90,172,0,0" VerticalAlignment="Top" Width="136" PlaceholderText="Velg Ank/Avg" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,225,0,0" TextWrapping="Wrap" Text="Request tok:" VerticalAlignment="Top" Width="68"/>
-        <TextBlock x:Name="TimeSpent" HorizontalAlignment="Left" Margin="101,225,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="162,226,0,0" TextWrapping="Wrap" Text="Millisekkunder" VerticalAlignment="Top" FontSize="10" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="StatusText" HorizontalAlignment="Left" Margin="340,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Height="22" FontSize="14" Grid.Column="1"/>
-        <ListView x:ConnectionId='2' x:Name="ListView" Grid.Column="1" HorizontalAlignment="Left" Height="408" Margin="432,47,0,0" VerticalAlignment="Top" Width="375" Foreground="White" Background="#FF3E3E3E" Opacity="0.75" BorderBrush="#FF898989"                         />
-        <Hub x:Name="HubSection" Header="Hub" HorizontalAlignment="Left" Margin="23,513,0,0" VerticalAlignment="Top" Grid.Column="1" Visibility="Collapsed" >
+        <ListView x:ConnectionId='2' x:Name="ListView" Grid.Column="1" HorizontalAlignment="Left" Height="408" Margin="41,47,0,0" VerticalAlignment="Top" Width="518" Foreground="White" Background="#FF3E3E3E" Opacity="0.75" BorderBrush="#FF898989"                         />
+        <Hub x:Name="HubSection" Header="Hub" HorizontalAlignment="Left" Margin="135,483,0,0" VerticalAlignment="Top" Visibility="Collapsed" Grid.ColumnSpan="2" >
             <HubSection x:Name="hubhead" Header="HubSection 0">
                 <DataTemplate>
                     <Grid/>
@@ -43,14 +37,21 @@
                     <Grid/>
                 </DataTemplate>
             </HubSection>
+            <HubSection x:Name="hubhead4" Header="HubSection 1">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
         </Hub>
         <TextBlock Visibility="Collapsed" x:Name="ToBox" Grid.Column="1" HorizontalAlignment="Left" Margin="390,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="TimeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="66,629,0,0" TextWrapping="Wrap" Text="Tid" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="FromBox" Grid.Column="1" HorizontalAlignment="Left" Margin="233,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="AirlineBox" Grid.Column="1" HorizontalAlignment="Left" Margin="562,629,0,0" TextWrapping="Wrap" Text="Flyselskap" VerticalAlignment="Top" Height="26" Width="87"/>
-        <Button x:ConnectionId='3' x:Name="SqlButton" Content="Query Database" Grid.Column="1" HorizontalAlignment="Left" Margin="829,363,0,0" VerticalAlignment="Top"                          />
-        <ListView x:Name="SqlList" Grid.Column="8" HorizontalAlignment="Left" Height="276" Margin="654,482,0,0" VerticalAlignment="Top" Width="471" Grid.ColumnSpan="8"/>
-        <Button x:ConnectionId='4' Content="Lagre til Database" Grid.Column="1" HorizontalAlignment="Left" Margin="829,400,0,0" VerticalAlignment="Top"                       />
+        <Button x:ConnectionId='3' Content="Lagre reise" Grid.Column="1" HorizontalAlignment="Left" Margin="579,223,0,0" VerticalAlignment="Top"                       />
+        <Button x:ConnectionId='4' Content="Vis lagrede reiser" Grid.Column="1" HorizontalAlignment="Left" Margin="576,414,0,0" VerticalAlignment="Top"                         />
+        <TextBlock x:Name="AirportErrorText" HorizontalAlignment="Left" Margin="56,98,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="170" TextAlignment="Right" Visibility="Collapsed"  Foreground="#FFFF0B0B"/>
+        <TextBlock x:Name="DepartureErrorText" HorizontalAlignment="Left" Margin="56,154,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="170" TextAlignment="Right" Visibility="Collapsed"  Foreground="#FFFF2121"/>
+        <TextBox x:Name="reisenavntext" Grid.Column="1" HorizontalAlignment="Left" Margin="582,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" PlaceholderText="Angi reisenavn"/>
 
     </Grid>
 </Page>

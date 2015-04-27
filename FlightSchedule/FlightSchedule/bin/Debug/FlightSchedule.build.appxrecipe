@@ -53,6 +53,9 @@
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\LagredeReiser.xbf">
+      <PackagePath>LagredeReiser.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>

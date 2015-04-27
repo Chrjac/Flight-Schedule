@@ -1,1 +1,1 @@
-﻿Select * from Reises
+﻿SELECT * FROM Reises
