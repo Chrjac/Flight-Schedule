@@ -44,6 +44,7 @@ namespace FlightSchedule
             AirportBox.Items.Add("Ålesund");
             ArrivalBox.Items.Add("Ankomster");
             ArrivalBox.Items.Add("Avganger");
+            ListView.IsEnabled = false;
         }
         public void Main()
         {
@@ -130,6 +131,7 @@ namespace FlightSchedule
 
             if (a != "null" && b != -1) {
                 Main();
+                ListView.IsEnabled = true;
             }
 
         }
@@ -148,7 +150,9 @@ namespace FlightSchedule
             hubhead3.Header = travel.Til;
             hubhead4.Header = travel.Flyselskap;
        
-            HubSection.Visibility = Visibility.Visible; 
+            HubSection.Visibility = Visibility.Visible;
+            StoreButton.Visibility = Visibility.Visible;
+            reisenavntext.Visibility = Visibility.Visible;
    
         }
 
@@ -156,11 +160,22 @@ namespace FlightSchedule
       
         private async void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
+           
            var a = (ListViewItem)ListView.SelectedItems[0];
            var travel = (Reise)a.Tag;
            travel.Navn = reisenavntext.Text;
-           travel.Dato = DateTime.Now.ToString("dd.MM.yy");       
-           await DataSource.AddReisesAsync(travel);
+           travel.Dato = DateTime.Now.ToString("dd.MM.yy");
+           if (reisenavntext.Text != "") 
+           {
+               await DataSource.AddReisesAsync(travel);
+               NameErrorText.Visibility = Visibility.Collapsed;
+           }
+           else 
+           {
+               NameErrorText.Visibility = Visibility.Visible;
+               NameErrorText.Text = "Angi reisenavn";
+           }
+           
         
         }
 

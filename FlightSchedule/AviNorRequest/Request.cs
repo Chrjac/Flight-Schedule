@@ -10,19 +10,13 @@ namespace AviNorRequest
 {
     public class Request
     {
-
-        public static void Main()
-        {
-            
-            
-        }
         public static string DoRequest(string AirPort, string ArrDep)
         {
             string body;
             string url = "http://flydata.avinor.no/XmlFeed.asp?airport="+AirPort+"&TimeFrom=1&TimeTo=7&direction="+ArrDep+"&lastUpdate=2015-03-18T15:03:00Z";
 
             HttpWebRequest req = WebRequest.CreateHttp(url);
-            req.Method = "GET"; //get is default
+            req.Method = "GET";
 
             var tsk = Task.Factory.FromAsync<WebResponse>(req.BeginGetResponse, req.EndGetResponse, req);
 

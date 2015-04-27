@@ -66,38 +66,31 @@ namespace DataLink
             // a smarter approach would be to update the element (remove/add is brute force)
             
         }
-        public static async Task EditReisesAsync(string navn)
+        public static async Task EditReisesAsync(Reise Reise, int Id)
         {
             MessageDialog dialog = new MessageDialog("");
             dialog.Commands.Add(new UICommand("Lukk"));
             Reise rs = new Reise();
-            
+            Reise.Id = Id;
             // to update the database, if OK, then proceed to update the local data
             const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
             var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
             var jsonSerializer = new DataContractJsonSerializer(typeof(Reise), jsonSerializerSettings);
 
             var stream = new MemoryStream();
+            jsonSerializer.WriteObject(stream, Reise);
             stream.Position = 0;   // Make sure to rewind the cursor before you try to read the stream
             var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
+            
 
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
-            var response = await client.PutAsync(new Uri("Reise/" + rs.Id ),content);
+            var response = await client.PutAsync(new Uri(RestServiceUrl +"Reise/"+ Reise.Id),content);
 
-            response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong
-            if (response.IsSuccessStatusCode)
-            {
-                dialog.Title = "Success";
-                dialog.Content = "Flygning slettet fra databasen";
-            }
-            else
-            {
-                dialog.Title = "Failed";
-                dialog.Content = "Kunne ikke slette flygningen fra databasen";
-            }
-            await dialog.ShowAsync();
-            var h = 1;
+            response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong         
             // a smarter approach would be to update the element (remove/add is brute force)
+            dialog.Title = "Success";
+            dialog.Content = "Flygning endret";
+            await dialog.ShowAsync();
 
         }
         public static async Task<Reise>AddReisesAsync(Reise aReise)

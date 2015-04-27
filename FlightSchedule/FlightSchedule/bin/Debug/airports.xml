@@ -4,7 +4,7 @@
     <airportName code="AAH" name="Aachen"/>
     <airportName code="AAL" name="Aalborg"/>
     <airportName code="AAQ" name="Anapa"/>
-    <airportName code="AAR" name="ï¿½rhus"/>
+    <airportName code="AAR" name="ørhus"/>
     <airportName code="ABA" name="Abakan"/>
     <airportName code="ABE" name="Allentown-Bethlehem-Easton"/>
     <airportName code="ABI" name="Abilene"/>
@@ -26,7 +26,7 @@
     <airportName code="ADH" name="Aldan"/>
     <airportName code="ADW" name="Camp Springs/Andrews"/>
     <airportName code="AER" name="Sochi"/>
-    <airportName code="AES" name="ï¿½lesund"/>
+    <airportName code="AES" name="ølesund"/>
     <airportName code="AEY" name="Akureyri"/>
     <airportName code="AFW" name="Fort Worth Alliance"/>
     <airportName code="AFY" name="Afyon"/>
@@ -35,7 +35,7 @@
     <airportName code="AGC" name="Pittsburgh/Allegheny"/>
     <airportName code="AGE" name="Wangerooge"/>
     <airportName code="AGF" name="Agen/La Garenne"/>
-    <airportName code="AGH" name="ï¿½ngelholm Helsingborg"/>
+    <airportName code="AGH" name="øngelholm Helsingborg"/>
     <airportName code="AGP" name="Malaga"/>
     <airportName code="AGQ" name="Agrinion"/>
     <airportName code="AGR" name="Agra/Kheria"/>
@@ -164,7 +164,7 @@
     <airportName code="BIS" name="Bismarck"/>
     <airportName code="BIX" name="Biloxi/Keesler"/>
     <airportName code="BJD" name="Bakkafjordur"/>
-    <airportName code="BJF" name="Bï¿½tsfjord"/>
+    <airportName code="BJF" name="Bøtsfjord"/>
     <airportName code="BJL" name="Banjul/Yundum"/>
     <airportName code="BJS" name="Beijing City"/>
     <airportName code="BJV" name="Bodrum/Milas"/>
@@ -174,7 +174,7 @@
     <airportName code="BKL" name="Cleveland Burke Lakefront"/>
     <airportName code="BKW" name="Beckley"/>
     <airportName code="BLA" name="Beauvais-Tille"/>
-    <airportName code="BLE" name="Borlï¿½nge"/>
+    <airportName code="BLE" name="Borlønge"/>
     <airportName code="BLI" name="Bellingham"/>
     <airportName code="BLK" name="Blackpool"/>
     <airportName code="BLL" name="Billund"/>
@@ -187,7 +187,7 @@
     <airportName code="BMG" name="Bloomington"/>
     <airportName code="BMR" name="Baltrum"/>
     <airportName code="BNA" name="Nashville"/>
-    <airportName code="BNN" name="Brï¿½nnï¿½ysund"/>
+    <airportName code="BNN" name="Brønnøysund"/>
     <airportName code="BOD" name="Bordeaux"/>
     <airportName code="BOF" name="Washington Bolling"/>
     <airportName code="BOH" name="Bournemouth"/>
@@ -231,7 +231,7 @@
     <airportName code="BVB" name="Boa Vista"/>
     <airportName code="BVC" name="Boa Vista"/>
     <airportName code="BVE" name="Brive La Gaillarde"/>
-    <airportName code="BVG" name="Berlevï¿½g"/>
+    <airportName code="BVG" name="Berlevøg"/>
     <airportName code="BVY" name="Beverly"/>
     <airportName code="BWE" name="Braunschweig"/>
     <airportName code="BWF" name="Barrow/Walney Island"/>
@@ -279,7 +279,7 @@
     <airportName code="CGF" name="Cleveland Cuyahoga"/>
     <airportName code="CGH" name="Sao Paulo Congonhas"/>
     <airportName code="CGI" name="Cape Girardeau"/>
-    <airportName code="CGN" name="Kï¿½ln Bonn"/>
+    <airportName code="CGN" name="Køln Bonn"/>
     <airportName code="CGX" name="Chicago Merrill"/>
     <airportName code="CHA" name="Chattanooga"/>
     <airportName code="CHC" name="Christchurch"/>
@@ -319,13 +319,13 @@
     <airportName code="COU" name="Colimbia Regional"/>
     <airportName code="COV" name="Covilha"/>
     <airportName code="COX" name="Congo Town, Andros I."/>
-    <airportName code="CPH" name="Kï¿½benhavn"/>
+    <airportName code="CPH" name="København"/>
     <airportName code="CPT" name="Cape Town"/>
     <airportName code="CQF" name="Calais/Dunkerque"/>
     <airportName code="CQM" name="Ciudad Real Airport"/>
     <airportName code="CRA" name="Craiova"/>
     <airportName code="CRI" name="Pittsdown Crooked Island"/>
-    <airportName code="CRL" name="Brussel Sï¿½r/Charleroi"/>
+    <airportName code="CRL" name="Brussel Sør/Charleroi"/>
     <airportName code="CRP" name="Corpus Christi International"/>
     <airportName code="CRV" name="Crotone"/>
     <airportName code="CRW" name="Charleston"/>
@@ -400,7 +400,7 @@
     <airportName code="DUB" name="Dublin"/>
     <airportName code="DUJ" name="Dubois/Jefferson"/>
     <airportName code="DUR" name="Durban"/>
-    <airportName code="DUS" name="Dï¿½sseldorf"/>
+    <airportName code="DUS" name="Døsseldorf"/>
     <airportName code="DXB" name="Dubai"/>
     <airportName code="EAS" name="San Sebastian"/>
     <airportName code="EAU" name="Eau Claire"/>
@@ -464,7 +464,7 @@
     <airportName code="EYW" name="Key West"/>
     <airportName code="EZS" name="Elazig"/>
     <airportName code="FAB" name="Farnborough"/>
-    <airportName code="FAE" name="Fï¿½rï¿½yene"/>
+    <airportName code="FAE" name="Førøyene"/>
     <airportName code="FAG" name="Fagurholsmyri"/>
     <airportName code="FAN" name="Farsund"/>
     <airportName code="FAO" name="Faro"/>
@@ -475,7 +475,7 @@
     <airportName code="FCA" name="Kalispell"/>
     <airportName code="FCN" name="Nordholz - Naval"/>
     <airportName code="FCO" name="Roma Fiumicino"/>
-    <airportName code="FDE" name="Fï¿½rde"/>
+    <airportName code="FDE" name="Førde"/>
     <airportName code="FDH" name="Friedrichshafen"/>
     <airportName code="FEZ" name="Fez"/>
     <airportName code="FFD" name="Fairford"/>
@@ -492,7 +492,7 @@
     <airportName code="FLW" name="Azorene Flores"/>
     <airportName code="FME" name="Fort Meade/Tipton A"/>
     <airportName code="FMM" name="Allgau Memmingen"/>
-    <airportName code="FMO" name="Mï¿½nster"/>
+    <airportName code="FMO" name="Mønster"/>
     <airportName code="FNC" name="Funchal"/>
     <airportName code="FNI" name="Nimes"/>
     <airportName code="FNT" name="Flint/Bishop"/>
@@ -507,7 +507,7 @@
     <airportName code="FRG" name="Farmingdale"/>
     <airportName code="FRI" name="Fort Riley/Marshall"/>
     <airportName code="FRL" name="Forli"/>
-    <airportName code="FRO" name="Florï¿½"/>
+    <airportName code="FRO" name="Florø"/>
     <airportName code="FRU" name="Manas"/>
     <airportName code="FRZ" name="Fritzlar"/>
     <airportName code="FSC" name="Figari Corsica"/>
@@ -533,7 +533,7 @@
     <airportName code="GDN" name="Gdansk"/>
     <airportName code="GDX" name="Magadan/Sokol"/>
     <airportName code="GEG" name="Spokane International"/>
-    <airportName code="GEV" name="Gï¿½llivare"/>
+    <airportName code="GEV" name="Gøllivare"/>
     <airportName code="GFA" name="Great Falls Malmstrom AFB"/>
     <airportName code="GFL" name="Glens Falls/Warren C"/>
     <airportName code="GFR" name="Granville"/>
@@ -561,7 +561,7 @@
     <airportName code="GOI" name="Goa"/>
     <airportName code="GOJ" name="Novgorod"/>
     <airportName code="GON" name="Groton"/>
-    <airportName code="GOT" name="Gï¿½teborg"/>
+    <airportName code="GOT" name="Gøteborg"/>
     <airportName code="GOZ" name="Gorna Orechovitsa"/>
     <airportName code="GPA" name="Patras/Araxos A"/>
     <airportName code="GPT" name="Gulfport/Biloxi R"/>
@@ -577,7 +577,7 @@
     <airportName code="GRY" name="Grimsey"/>
     <airportName code="GRZ" name="Graz"/>
     <airportName code="GSB" name="Goldsboro/Seymour"/>
-    <airportName code="GSE" name="Gï¿½teborg Sï¿½ve"/>
+    <airportName code="GSE" name="Gøteborg Søve"/>
     <airportName code="GSP" name="Greenville Spartanburg Intl"/>
     <airportName code="GTF" name="Great Falls International"/>
     <airportName code="GTW" name="Zlin"/>
@@ -635,7 +635,7 @@
     <airportName code="HOQ" name="Hof"/>
     <airportName code="HOR" name="Azorene Horta"/>
     <airportName code="HOU" name="Houston Hobby"/>
-    <airportName code="HOV" name="ï¿½rsta/Volda"/>
+    <airportName code="HOV" name="ørsta/Volda"/>
     <airportName code="HPN" name="White Plains"/>
     <airportName code="HQM" name="Hoquiam/Bowerman"/>
     <airportName code="HRD" name="Harstad"/>
@@ -650,12 +650,12 @@
     <airportName code="HUF" name="Terre Haute"/>
     <airportName code="HUV" name="Hudiksvall"/>
     <airportName code="HUY" name="Humberside"/>
-    <airportName code="HVG" name="Honningsvï¿½g"/>
+    <airportName code="HVG" name="Honningsvøg"/>
     <airportName code="HVK" name="Holmavik"/>
     <airportName code="HVN" name="New Haven"/>
     <airportName code="HYA" name="Hyannis Barnstable"/>
     <airportName code="HYC" name="High Wycombe"/>
-    <airportName code="HYV" name="Hyvinkï¿½ï¿½"/>
+    <airportName code="HYV" name="Hyvinkøø"/>
     <airportName code="HZK" name="Husavik"/>
     <airportName code="IAD" name="Washington Dulles "/>
     <airportName code="IAG" name="Niagara Falls"/>
@@ -715,7 +715,7 @@
     <airportName code="JIK" name="Ikaria"/>
     <airportName code="JJN" name="Jinjiang"/>
     <airportName code="JJU" name="Qaqortoq/Julianehaab"/>
-    <airportName code="JKG" name="Jï¿½nkï¿½ping"/>
+    <airportName code="JKG" name="Jønkøping"/>
     <airportName code="JKH" name="Chios"/>
     <airportName code="JKT" name="Jakarta"/>
     <airportName code="JLN" name="Joplin"/>
@@ -735,7 +735,7 @@
     <airportName code="JTY" name="Astypalaia"/>
     <airportName code="JUI" name="Juist"/>
     <airportName code="JXN" name="Jackson/Reynolds"/>
-    <airportName code="JYV" name="Jyvï¿½skylï¿½"/>
+    <airportName code="JYV" name="Jyvøskylø"/>
     <airportName code="KAJ" name="Kajaani"/>
     <airportName code="KAO" name="Kuusamo"/>
     <airportName code="KAU" name="Kauhava"/>
@@ -801,7 +801,7 @@
     <airportName code="KUO" name="Kuopio"/>
     <airportName code="KUS" name="Kulusuk"/>
     <airportName code="KVA" name="Kavala"/>
-    <airportName code="KVB" name="Skï¿½vde"/>
+    <airportName code="KVB" name="Skøvde"/>
     <airportName code="KVX" name="Kirov"/>
     <airportName code="KWI" name="Kuwait"/>
     <airportName code="KYA" name="Konya"/>
@@ -818,7 +818,7 @@
     <airportName code="LAX" name="Los Angeles"/>
     <airportName code="LBA" name="Leeds/Bradford"/>
     <airportName code="LBB" name="Lubbock International"/>
-    <airportName code="LBC" name="Hamburg Lï¿½beck"/>
+    <airportName code="LBC" name="Hamburg Løbeck"/>
     <airportName code="LBD" name="Khudzhand"/>
     <airportName code="LBE" name="Latrobe/Westmore"/>
     <airportName code="LBG" name="Le Bourget"/>
@@ -834,7 +834,7 @@
     <airportName code="LCV" name="Lucca/Tassignano"/>
     <airportName code="LCY" name="London City"/>
     <airportName code="LDE" name="Lourdes/Tarbes"/>
-    <airportName code="LDK" name="Lidkï¿½ping"/>
+    <airportName code="LDK" name="Lidkøping"/>
     <airportName code="LDV" name="Landivisiau"/>
     <airportName code="LDY" name="Londonderry"/>
     <airportName code="LEB" name="Lebanon"/>
@@ -864,7 +864,7 @@
     <airportName code="LJU" name="Ljubljana"/>
     <airportName code="LKL" name="Lakselv"/>
     <airportName code="LKN" name="Leknes"/>
-    <airportName code="LLA" name="Luleï¿½"/>
+    <airportName code="LLA" name="Luleø"/>
     <airportName code="LME" name="Le Mans-Arnage"/>
     <airportName code="LMO" name="Lossiemouth"/>
     <airportName code="LMP" name="Lampedusa"/>
@@ -877,7 +877,7 @@
     <airportName code="LOU" name="Louisville Bowman Field"/>
     <airportName code="LOZ" name="London US"/>
     <airportName code="LPA" name="Gran Canaria"/>
-    <airportName code="LPI" name="Linkï¿½ping"/>
+    <airportName code="LPI" name="Linkøping"/>
     <airportName code="LPL" name="Liverpool"/>
     <airportName code="LPP" name="Lappeenranta"/>
     <airportName code="LPT" name="Lampang"/>
@@ -964,7 +964,7 @@
     <airportName code="MIL" name="Milano"/>
     <airportName code="MIP" name="Mitzpe-Ramon Airstrip"/>
     <airportName code="MIR" name="Monastir"/>
-    <airportName code="MJF" name="Mosjï¿½en"/>
+    <airportName code="MJF" name="Mosjøen"/>
     <airportName code="MJH" name="Madinah/Pr Mohammad Bin Abdula"/>
     <airportName code="MJT" name="Mytilini"/>
     <airportName code="MJV" name="Murcia"/>
@@ -987,7 +987,7 @@
     <airportName code="MME" name="Teesside"/>
     <airportName code="MMK" name="Murmansk"/>
     <airportName code="MMU" name="Morristown"/>
-    <airportName code="MMX" name="Malmï¿½"/>
+    <airportName code="MMX" name="Malmø"/>
     <airportName code="MNL" name="Manila"/>
     <airportName code="MOD" name="Modesto"/>
     <airportName code="MOL" name="Molde"/>
@@ -1064,18 +1064,18 @@
     <airportName code="NOR" name="Nordfjordur"/>
     <airportName code="NPA" name="Pensacola NAS"/>
     <airportName code="NQI" name="Kingsville/NAS"/>
-    <airportName code="NQJ" name="Gjï¿½a"/>
+    <airportName code="NQJ" name="Gjøa"/>
     <airportName code="NQX" name="Key West/NAS"/>
     <airportName code="NQY" name="Newquay"/>
     <airportName code="NRD" name="Norderney"/>
-    <airportName code="NRK" name="Norrkï¿½ping"/>
+    <airportName code="NRK" name="Norrkøping"/>
     <airportName code="NRL" name="North Ronaldsway"/>
-    <airportName code="NRN" name="Dï¿½sseldorf Weeze"/>
+    <airportName code="NRN" name="Døsseldorf Weeze"/>
     <airportName code="NRT" name="Tokyo Narita"/>
     <airportName code="NSY" name="Sigonella"/>
     <airportName code="NTB" name="Notodden"/>
     <airportName code="NTE" name="Nantes"/>
-    <airportName code="NUE" name="Nï¿½rnberg"/>
+    <airportName code="NUE" name="Nørnberg"/>
     <airportName code="NUQ" name="Mountain View"/>
     <airportName code="NUT" name="Nutuve"/>
     <airportName code="NVK" name="Narvik"/>
@@ -1097,12 +1097,12 @@
     <airportName code="ODE" name="Odense"/>
     <airportName code="ODH" name="Odiham"/>
     <airportName code="ODS" name="Odessa"/>
-    <airportName code="OER" name="ï¿½rnskï¿½ldsvik"/>
+    <airportName code="OER" name="ørnskøldsvik"/>
     <airportName code="OGD" name="Ogden"/>
     <airportName code="OHR" name="Wyk Auf Fohr"/>
     <airportName code="OKA" name="Okinawa/Kadena A"/>
     <airportName code="OKC" name="Oklahoma City"/>
-    <airportName code="OLA" name="ï¿½rland"/>
+    <airportName code="OLA" name="ørland"/>
     <airportName code="OLB" name="Olbia"/>
     <airportName code="OLD" name="Old Town"/>
     <airportName code="OLM" name="Olympia"/>
@@ -1116,7 +1116,7 @@
     <airportName code="OPA" name="Kopasker"/>
     <airportName code="OPO" name="Porto"/>
     <airportName code="ORA" name="Al Asud"/>
-    <airportName code="ORB" name="ï¿½rebro"/>
+    <airportName code="ORB" name="ørebro"/>
     <airportName code="ORD" name="Chicago OHare"/>
     <airportName code="ORE" name="Orleans"/>
     <airportName code="ORF" name="Norfolk"/>
@@ -1125,14 +1125,14 @@
     <airportName code="ORM" name="Northampton/Sywell"/>
     <airportName code="ORY" name="Paris Orly"/>
     <airportName code="OSA" name="Osaka"/>
-    <airportName code="OSD" name="ï¿½stersund"/>
+    <airportName code="OSD" name="østersund"/>
     <airportName code="OSH" name="Oshkosh"/>
     <airportName code="OSI" name="Osijek"/>
     <airportName code="OSK" name="Oskarshamn"/>
     <airportName code="OSL" name="Oslo"/>
     <airportName code="OSP" name="Redzikow"/>
     <airportName code="OSR" name="Ostrava"/>
-    <airportName code="OSS" name="Oseberg Sï¿½r"/>
+    <airportName code="OSS" name="Oseberg Sør"/>
     <airportName code="OST" name="Oostende"/>
     <airportName code="OSU" name="Columbus Ohio State University"/>
     <airportName code="OSY" name="Namsos"/>
@@ -1251,7 +1251,7 @@
     <airportName code="QFK" name="Selje"/>
     <airportName code="QFN" name="Narsaq Kujalleq/Frederiksdal"/>
     <airportName code="QFO" name="Duxford"/>
-    <airportName code="QFQ" name="Mï¿½lï¿½y"/>
+    <airportName code="QFQ" name="Møløy"/>
     <airportName code="QFR" name="Frosinone"/>
     <airportName code="QGO" name="Gorizia"/>
     <airportName code="QGY" name="Gyor"/>
@@ -1259,7 +1259,7 @@
     <airportName code="QIE" name="Istres-Le Tube"/>
     <airportName code="QIF" name="Isleworth"/>
     <airportName code="QIZ" name="Bizerte"/>
-    <airportName code="QJL" name="Kjï¿½llefjord"/>
+    <airportName code="QJL" name="Kjøllefjord"/>
     <airportName code="QJS" name="Saeby/Ottestrup"/>
     <airportName code="QKF" name="Krefeld-Egelsberg"/>
     <airportName code="QKK" name="Karasjok"/>
@@ -1278,7 +1278,7 @@
     <airportName code="QNM" name="Namur/Suarlee"/>
     <airportName code="QNX" name="Macon-Charnay"/>
     <airportName code="QOB" name="Ansbach-Petersdorf"/>
-    <airportName code="QOK" name="ï¿½ksfjord"/>
+    <airportName code="QOK" name="øksfjord"/>
     <airportName code="QOS" name="Oristano Fenosu"/>
     <airportName code="QPA" name="Padova"/>
     <airportName code="QPB" name="Campobasso"/>
@@ -1302,10 +1302,10 @@
     <airportName code="QVF" name="Karkkila"/>
     <airportName code="QVK" name="Valkeakoski"/>
     <airportName code="QVM" name="Hameenlinna"/>
-    <airportName code="QVO" name="Kjï¿½llefjord"/>
+    <airportName code="QVO" name="Kjøllefjord"/>
     <airportName code="QVQ" name="Verden-Scharnhorst"/>
     <airportName code="QVS" name="Tervakoski"/>
-    <airportName code="QVT" name="Riihimï¿½ki"/>
+    <airportName code="QVT" name="Riihimøki"/>
     <airportName code="QVV" name="Heinola"/>
     <airportName code="QVW" name="Kotka"/>
     <airportName code="QVY" name="Kouvola"/>
@@ -1325,7 +1325,7 @@
     <airportName code="QZJ" name="Loimaa"/>
     <airportName code="QZK" name="Mantsala"/>
     <airportName code="QZO" name="Arezzo"/>
-    <airportName code="QZS" name="Sï¿½rï¿½ya"/>
+    <airportName code="QZS" name="Sørøya"/>
     <airportName code="QZU" name="Rauma"/>
     <airportName code="RAE" name="Al-Baha/Al-Aqiq"/>
     <airportName code="RAK" name="Marrakech"/>
@@ -1335,7 +1335,7 @@
     <airportName code="RBA" name="Rabat"/>
     <airportName code="RBL" name="Red Bluff"/>
     <airportName code="RBM" name="Straubing-Wallmuhle"/>
-    <airportName code="RCA" name="Rapid Cityï¿½Ellsworth AFB"/>
+    <airportName code="RCA" name="Rapid CityøEllsworth AFB"/>
     <airportName code="RCO" name="Rochefort"/>
     <airportName code="RCS" name="Rochester (US)"/>
     <airportName code="RDD" name="Redding"/>
@@ -1346,7 +1346,7 @@
     <airportName code="REB" name="Rechlin-Larz"/>
     <airportName code="REE" name="Lubbock Reese AFB"/>
     <airportName code="REG" name="Reggio Calabria"/>
-    <airportName code="RET" name="Rï¿½st"/>
+    <airportName code="RET" name="Røst"/>
     <airportName code="REU" name="Reus"/>
     <airportName code="RFN" name="Raufarhofn"/>
     <airportName code="RHE" name="Reims-Champagne"/>
@@ -1358,7 +1358,7 @@
     <airportName code="RIV" name="Riverside/March AF"/>
     <airportName code="RIX" name="Riga"/>
     <airportName code="RJK" name="Rijeka"/>
-    <airportName code="RKE" name="Kï¿½benhavn Roskilde"/>
+    <airportName code="RKE" name="København Roskilde"/>
     <airportName code="RKV" name="Reykjavik"/>
     <airportName code="RLG" name="Rostock-Laage"/>
     <airportName code="RME" name="Rome Griffiss (US)"/>
@@ -1366,7 +1366,7 @@
     <airportName code="RMG" name="Rome Richard B. Russell (US)"/>
     <airportName code="RMI" name="Rimini"/>
     <airportName code="RMS" name="Ramstein"/>
-    <airportName code="RNB" name="Rï¿½nneby"/>
+    <airportName code="RNB" name="Rønneby"/>
     <airportName code="RNE" name="Roanne-Renaison"/>
     <airportName code="RNN" name="Bornholm"/>
     <airportName code="RNO" name="Reno"/>
@@ -1378,13 +1378,13 @@
     <airportName code="ROU" name="Rousse"/>
     <airportName code="ROW" name="Roswell"/>
     <airportName code="RPN" name="Rosh Pina"/>
-    <airportName code="RRS" name="Rï¿½ros"/>
+    <airportName code="RRS" name="Røros"/>
     <airportName code="RSD" name="Rock Sound/Intl,  Eleuthera I."/>
     <airportName code="RSW" name="Fort Myers/Southwes"/>
     <airportName code="RTM" name="Rotterdam"/>
     <airportName code="RUH" name="Riyadh"/>
     <airportName code="RUT" name="Rutland"/>
-    <airportName code="RVK" name="Rï¿½rvik"/>
+    <airportName code="RVK" name="Rørvik"/>
     <airportName code="RVN" name="Rovaniemi"/>
     <airportName code="RWI" name="Rocky Mount"/>
     <airportName code="RYG" name="Rygge"/>
@@ -1394,7 +1394,7 @@
     <airportName code="SAN" name="San Diego Lindbergh"/>
     <airportName code="SAT" name="San Antonio"/>
     <airportName code="SAV" name="Savannah Hilton Head"/>
-    <airportName code="SAW" name="Istanbul Sabiha Gï¿½kcen"/>
+    <airportName code="SAW" name="Istanbul Sabiha Gøkcen"/>
     <airportName code="SAY" name="Siena"/>
     <airportName code="SBA" name="Santa Barbara"/>
     <airportName code="SBD" name="San Bernardino Norton AFB"/>
@@ -1423,12 +1423,12 @@
     <airportName code="SFB" name="Orlando Sanford"/>
     <airportName code="SFF" name="Spokane Felts Field"/>
     <airportName code="SFI" name="Safi"/>
-    <airportName code="SFJ" name="Kangerlussuaq Sï¿½ndre Strï¿½mfj"/>
+    <airportName code="SFJ" name="Kangerlussuaq Søndre Strømfj"/>
     <airportName code="SFO" name="San Francisco"/>
     <airportName code="SFQ" name="Sanliurfa"/>
-    <airportName code="SFT" name="Skellefteï¿½"/>
+    <airportName code="SFT" name="Skellefteø"/>
     <airportName code="SGC" name="Surgut"/>
-    <airportName code="SGD" name="Sï¿½nderborg"/>
+    <airportName code="SGD" name="Sønderborg"/>
     <airportName code="SGE" name="Siegen"/>
     <airportName code="SGF" name="Springfield Branson"/>
     <airportName code="SGH" name="Springfield"/>
@@ -1475,15 +1475,15 @@
     <airportName code="SMW" name="Smara"/>
     <airportName code="SMX" name="Santa Maria"/>
     <airportName code="SNA" name="Santa Ana"/>
-    <airportName code="SNG" name="Sï¿½r-Norge"/>
+    <airportName code="SNG" name="Sør-Norge"/>
     <airportName code="SNN" name="Shannon"/>
     <airportName code="SNS" name="Salinas"/>
     <airportName code="SOB" name="Saarmelleek"/>
     <airportName code="SOF" name="Sofia"/>
     <airportName code="SOG" name="Sogndal"/>
-    <airportName code="SOJ" name="Sï¿½rkjosen"/>
+    <airportName code="SOJ" name="Sørkjosen"/>
     <airportName code="SOK" name="Sodankyla"/>
-    <airportName code="SOO" name="Sï¿½derhamn"/>
+    <airportName code="SOO" name="Søderhamn"/>
     <airportName code="SOU" name="Southampton"/>
     <airportName code="SOY" name="Stronsay"/>
     <airportName code="SOZ" name="Solenzara"/>
@@ -1502,7 +1502,7 @@
     <airportName code="SSC" name="Sumter/Shaw AFB"/>
     <airportName code="SSH" name="Sharm el Sheik"/>
     <airportName code="SSI" name="Brunswick Mckinnon"/>
-    <airportName code="SSJ" name="Sandnessjï¿½en"/>
+    <airportName code="SSJ" name="Sandnessjøen"/>
     <airportName code="SSX" name="Samsun"/>
     <airportName code="STA" name="Stauning"/>
     <airportName code="STJ" name="St Joseph"/>
@@ -1525,7 +1525,7 @@
     <airportName code="SWO" name="Stillwater"/>
     <airportName code="SWS" name="Swansea"/>
     <airportName code="SXB" name="Strasbourg Entzheim"/>
-    <airportName code="SXF" name="Berlin Schï¿½nefeld"/>
+    <airportName code="SXF" name="Berlin Schønefeld"/>
     <airportName code="SXL" name="Sligo"/>
     <airportName code="SXZ" name="Siirt"/>
     <airportName code="SYG" name="Svalbard"/>
@@ -1560,7 +1560,7 @@
     <airportName code="TGA" name="Tengah"/>
     <airportName code="TGD" name="Podgorica"/>
     <airportName code="THF" name="Berlin Tempelhof"/>
-    <airportName code="THN" name="Trollhï¿½ttan"/>
+    <airportName code="THN" name="Trollhøttan"/>
     <airportName code="THO" name="Thorshofn"/>
     <airportName code="TIA" name="Tirana"/>
     <airportName code="TIF" name="Tabuk"/>
@@ -1621,7 +1621,7 @@
     <airportName code="ULA" name="Ula"/>
     <airportName code="ULY" name="Uljanovsk"/>
     <airportName code="UMD" name="Uummannaq"/>
-    <airportName code="UME" name="Umeï¿½"/>
+    <airportName code="UME" name="Umeø"/>
     <airportName code="UNN" name="Ranong"/>
     <airportName code="UOX" name="Oxford"/>
     <airportName code="URD" name="Burg Feuerstein"/>
@@ -1641,7 +1641,7 @@
     <airportName code="VAN" name="Van"/>
     <airportName code="VAR" name="Varna"/>
     <airportName code="VAS" name="Sivas"/>
-    <airportName code="VAW" name="Vardï¿½"/>
+    <airportName code="VAW" name="Vardø"/>
     <airportName code="VBG" name="Lompoc Vandenberg AFB"/>
     <airportName code="VBS" name="Brescia"/>
     <airportName code="VBY" name="Visby"/>
@@ -1650,7 +1650,7 @@
     <airportName code="VDA" name="Ovda"/>
     <airportName code="VDB" name="Fagernes"/>
     <airportName code="VDP" name="Kolding"/>
-    <airportName code="VDS" name="Vadsï¿½"/>
+    <airportName code="VDS" name="Vadsø"/>
     <airportName code="VEY" name="Vestmannaeyjar"/>
     <airportName code="VGO" name="Vigo"/>
     <airportName code="VHM" name="Vilhelmina"/>
@@ -1679,13 +1679,13 @@
     <airportName code="VRK" name="Varkaus"/>
     <airportName code="VRL" name="Vila Real"/>
     <airportName code="VRN" name="Verona"/>
-    <airportName code="VRY" name="Vï¿½rï¿½y"/>
+    <airportName code="VRY" name="Vørøy"/>
     <airportName code="VSE" name="Viseu"/>
-    <airportName code="VST" name="Vï¿½sterï¿½s"/>
+    <airportName code="VST" name="Vøsterøs"/>
     <airportName code="VTL" name="Vittel-Champ De Courses"/>
     <airportName code="VVK" name="Vestervik"/>
     <airportName code="VVO" name="Vladivostok"/>
-    <airportName code="VXO" name="Vï¿½xjï¿½"/>
+    <airportName code="VXO" name="Vøxjø"/>
     <airportName code="WAT" name="Waterford"/>
     <airportName code="WAW" name="Warszawa"/>
     <airportName code="WBG" name="Schleswig"/>
@@ -1959,7 +1959,7 @@
     <airportName code="ZQP" name="Wesel-Romerwardt"/>
     <airportName code="ZQV" name="Worms"/>
     <airportName code="ZQW" name="Zweibruken"/>
-    <airportName code="ZRH" name="Zï¿½rich"/>
+    <airportName code="ZRH" name="Zørich"/>
     <airportName code="ZRK" name="Rockford"/>
     <airportName code="ZSK" name="Pasewalk-Fransfelde"/>
     <airportName code="ZSN" name="Stendal-Borstel"/>

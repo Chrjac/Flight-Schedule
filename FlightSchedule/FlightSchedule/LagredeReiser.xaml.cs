@@ -53,6 +53,7 @@ namespace FlightSchedule
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
+            SqlList2.IsEnabled = false;
         }
 
         /// <summary>
@@ -124,7 +125,7 @@ namespace FlightSchedule
             {
                 var a = new ListViewItem();
                 a.Tag = item;
-                a.Content = item.Id+"   " + item.Dato + "        " + item.Tid + "        " + item.Navn + "        " + item.FlightId + "        " + item.Fra + "        " + item.Til + "        " + item.Flyselskap;
+                a.Content = item.Dato + "        " + item.Tid + "        " + item.Navn + "        " + item.FlightId + "        " + item.Fra + "        " + item.Til + "        " + item.Flyselskap;
                 SqlList2.Items.Add(a);
             }
             sqllistcount.Text = "Antall reiser i listen: " + SqlList2.Items.Count.ToString();
@@ -135,20 +136,23 @@ namespace FlightSchedule
         private void Button_Tapped_1(object sender, TappedRoutedEventArgs e)
         {
             UpdateSqlList();
+            SqlList2.IsEnabled = true;
+            
         }
 
         private void SqlList2_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
-            var a = (ListViewItem)SqlList2.SelectedItems[0];
+            var a = (ListViewItem)SqlList2.SelectedItem;        
             var item = (Reise)a.Tag;
             HubNavn.Header = item.Navn;
             HubDato.Header = "Dato: "+item.Dato;
-            HubTid.Header = "Tid: "+item.Tid;
+            HubTid.Header = "Avgang: "+item.Tid;
             Hubflightid.Header = "Flight: " +item.FlightId;
             Hubflyselskap.Header = "Flyselskap: "+item.Flyselskap;
             FraHub.Header = "Fra: " + item.Fra;
             TilHub.Header = "Til: " + item.Til;
+            UpdateReiseButton.Visibility = Visibility.Visible;
+            
             
             
 
@@ -163,9 +167,41 @@ namespace FlightSchedule
             UpdateSqlList();
         }
 
-        private void Button_Tapped_3(object sender, TappedRoutedEventArgs e)
+        private async void Button_Tapped_3(object sender, TappedRoutedEventArgs e)
         {
+            var a = (ListViewItem)SqlList2.SelectedItem;
+            var travel = (Reise)a.Tag;
 
+            int Id = travel.Id;
+            var UpdateReise = new Reise()
+            {
+                Navn = editreisenavn.Text,
+                Dato = travel.Dato,
+                Tid = travel.Tid,
+                FlightId = travel.FlightId,
+                Fra = travel.Fra,
+                Til = travel.Til,
+                Flyselskap = travel.Flyselskap
+            };
+            await DataSource.EditReisesAsync(UpdateReise,Id);
+            UpdateSqlList();
+        }
+
+        private void UpdateReiseButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (editreisenavn.Visibility == Visibility.Collapsed)
+            { 
+                editreisenavn.Visibility = Visibility.Visible;
+                NameText.Visibility = Visibility.Visible;
+                EditButton.Visibility = Visibility.Visible;
+            }
+            else 
+            {
+                editreisenavn.Visibility = Visibility.Collapsed;
+                NameText.Visibility = Visibility.Collapsed;
+                EditButton.Visibility = Visibility.Collapsed;
+            }
+     
         }
 
     }

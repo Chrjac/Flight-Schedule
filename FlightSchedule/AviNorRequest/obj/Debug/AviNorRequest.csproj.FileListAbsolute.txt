@@ -34,8 +34,6 @@ C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest
 C:\Users\Christian\Documents\GitHub\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll
 F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.pdb
-F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll.CodeAnalysisLog.xml
-F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll.lastcodeanalysissucceeded
 F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.pri
 F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\AviNorRequest.dll
 F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\obj\Debug\AviNorRequest.pdb

@@ -37,7 +37,7 @@
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='4' x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+            <Button x:ConnectionId='5' x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
                         VerticalAlignment="Top"
                         AutomationProperties.Name="Back"
@@ -45,11 +45,11 @@
                         AutomationProperties.ItemType="Navigation Button"                           />
             <TextBlock x:Name="pageTitle" Text="Tilbake" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-            <ListView x:ConnectionId='5' x:Name="SqlList2" Grid.Column="1" HorizontalAlignment="Left" Height="495" Margin="66,164,0,-519" VerticalAlignment="Top" Width="607" Foreground="White" BorderBrush="Black" Background="#FF303030"                         />
+            <ListView x:ConnectionId='6' x:Name="SqlList2" Grid.Column="1" HorizontalAlignment="Left" Height="495" Margin="66,164,0,-519" VerticalAlignment="Top" Width="607" Foreground="White" BorderBrush="Black" Background="#FF303030"                         />
 
         </Grid>
-        <Button x:ConnectionId='1' Content="Delete" HorizontalAlignment="Left" Margin="92,368,0,0" Grid.Row="1" VerticalAlignment="Top"                         />
-        <Button x:ConnectionId='2' Content="Edit" HorizontalAlignment="Left" Margin="92,420,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"                         />
+        <Button x:ConnectionId='1' Content="Delete" HorizontalAlignment="Left" Margin="92,417,0,0" Grid.Row="1" VerticalAlignment="Top"                         />
+        <Button x:ConnectionId='2' Content="Endre" Visibility="Collapsed" Name="EditButton" HorizontalAlignment="Left" Margin="886,473,0,0" Grid.Row="1" VerticalAlignment="Top" Width="82"                         />
         <Button x:ConnectionId='3' Content="Query" HorizontalAlignment="Left" Margin="92,473,0,0" Grid.Row="1" VerticalAlignment="Top"                         />
         <Hub Name="HubNavn" Margin="795,120,169,508" Grid.RowSpan="2" FontWeight="Bold"/>
         <HubSection Name="HubTid" Margin="782,129,0,359" Grid.Row="1">
@@ -83,7 +83,9 @@
                 <Grid/>
             </DataTemplate>
         </HubSection>
-        <TextBox x:Name="editname" HorizontalAlignment="Left" Margin="822,34,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox x:Name="editreisenavn" Visibility="Collapsed" HorizontalAlignment="Left" Margin="889,410,0,0" Grid.Row="1" TextWrapping="Wrap" PlaceholderText="Endre reisenavn" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='4' Content="Endre Reise" Visibility="Collapsed" Name="UpdateReiseButton" HorizontalAlignment="Left" Margin="819,346,0,0" Grid.Row="1" VerticalAlignment="Top"                                  />
+        <TextBlock Visibility="Collapsed" Name="NameText" HorizontalAlignment="Left" Margin="822,414,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Navn: " VerticalAlignment="Top" FontSize="18"/>
 
     </Grid>
 </Page>

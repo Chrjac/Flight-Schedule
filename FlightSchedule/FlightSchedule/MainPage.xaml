@@ -12,7 +12,7 @@
             <ColumnDefinition Width="206*"/>
             <ColumnDefinition Width="1161*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Vis flygninger" HorizontalAlignment="Left" Margin="576,276,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="Vis flygninger" HorizontalAlignment="Left" Margin="576,367,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1"/>
         <ComboBox x:Name="AirportBox" HorizontalAlignment="Left" Margin="90,116,0,0" VerticalAlignment="Top" Width="136" IsSynchronizedWithCurrentItem="False" PlaceholderText="Velg Flyplass" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="ArrivalBox" HorizontalAlignment="Left" Margin="90,172,0,0" VerticalAlignment="Top" Width="136" PlaceholderText="Velg Ank/Avg" Grid.ColumnSpan="2"/>
         <ListView x:Name="ListView" Grid.Column="1" HorizontalAlignment="Left" Height="408" Margin="41,47,0,0" VerticalAlignment="Top" Width="518" Foreground="White" Background="#FF3E3E3E" Opacity="0.75" BorderBrush="#FF898989" Tapped="ListView_Tapped"/>
@@ -47,11 +47,11 @@
         <TextBlock Visibility="Collapsed" x:Name="TimeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="66,629,0,0" TextWrapping="Wrap" Text="Tid" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="FromBox" Grid.Column="1" HorizontalAlignment="Left" Margin="233,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="AirlineBox" Grid.Column="1" HorizontalAlignment="Left" Margin="562,629,0,0" TextWrapping="Wrap" Text="Flyselskap" VerticalAlignment="Top" Height="26" Width="87"/>
-        <Button Content="Lagre reise" Grid.Column="1" HorizontalAlignment="Left" Margin="579,223,0,0" VerticalAlignment="Top" Tapped="Button_Tapped"/>
-        <Button Content="Vis lagrede reiser" Grid.Column="1" HorizontalAlignment="Left" Margin="576,414,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_1"/>
+        <Button Content="Lagre reise" Name="StoreButton" Grid.Column="1" HorizontalAlignment="Left" Margin="576,256,0,0" VerticalAlignment="Top" Visibility="Collapsed" Tapped="Button_Tapped"/>
+        <Button Content="Vis lagrede reiser" Grid.Column="1" HorizontalAlignment="Left" Margin="576,420,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_1"/>
         <TextBlock x:Name="AirportErrorText" HorizontalAlignment="Left" Margin="56,98,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="170" TextAlignment="Right" Visibility="Collapsed"  Foreground="#FFFF0B0B"/>
         <TextBlock x:Name="DepartureErrorText" HorizontalAlignment="Left" Margin="56,154,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="170" TextAlignment="Right" Visibility="Collapsed"  Foreground="#FFFF2121"/>
-        <TextBox x:Name="reisenavntext" Grid.Column="1" HorizontalAlignment="Left" Margin="582,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" PlaceholderText="Angi reisenavn"/>
-
+        <TextBox x:Name="reisenavntext" Grid.Column="1" HorizontalAlignment="Left" Margin="579,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Visibility="Collapsed" PlaceholderText="Angi reisenavn"/>
+        <TextBlock x:Name="NameErrorText" HorizontalAlignment="Left" Margin="579,191,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="170" Visibility="Collapsed"  Foreground="#FFFF0B0B" Grid.Column="1"/>
     </Grid>
 </Page>

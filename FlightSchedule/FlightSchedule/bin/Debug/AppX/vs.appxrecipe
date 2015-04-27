@@ -20,21 +20,21 @@
     <AppXManifest Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-04-26T18:08:39.357</Modified>
+      <Modified>2015-04-27T11:21:31.276</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.exe">
       <PackagePath>FlightSchedule.exe</PackagePath>
-      <Modified>2015-04-26T20:26:22.174</Modified>
+      <Modified>2015-04-27T11:26:55.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll">
       <PackagePath>AviNorRequest.dll</PackagePath>
-      <Modified>2015-04-21T14:56:21.082</Modified>
+      <Modified>2015-04-27T11:21:30.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\DataLink\bin\Debug\DataLink.dll">
       <PackagePath>DataLink.dll</PackagePath>
-      <Modified>2015-04-26T20:26:21.698</Modified>
+      <Modified>2015-04-27T09:55:51.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
@@ -46,7 +46,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\airports.xml">
       <PackagePath>airports.xml</PackagePath>
-      <Modified>2015-04-26T18:14:12.341</Modified>
+      <Modified>2015-04-27T11:24:48.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -74,19 +74,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\LagredeReiser.xbf">
       <PackagePath>LagredeReiser.xbf</PackagePath>
-      <Modified>2015-04-26T19:35:53.139</Modified>
+      <Modified>2015-04-27T11:21:30.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-04-26T19:35:53.141</Modified>
+      <Modified>2015-04-27T11:21:30.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.xr.xml">
       <PackagePath>FlightSchedule.xr.xml</PackagePath>
-      <Modified>2015-04-26T19:20:53.753</Modified>
+      <Modified>2015-04-27T09:54:47.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-04-26T18:08:39.328</Modified>
+      <Modified>2015-04-27T11:21:31.163</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
