@@ -9,7 +9,7 @@ namespace DataModel
     {
         public Reise()
         {
-
+            this.Users = new HashSet<Users>();
         }
         public int Id { get; set; }
         public string Navn { get; set; }
@@ -19,6 +19,8 @@ namespace DataModel
         public string Fra { get; set; }
         public string Til { get; set; }
         public string Flyselskap { get; set; }
+
+        public virtual ICollection<Users> Users  {get; set;}
 
         }
     }

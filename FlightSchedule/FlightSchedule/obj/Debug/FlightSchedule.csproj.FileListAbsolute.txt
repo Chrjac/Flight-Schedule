@@ -134,3 +134,8 @@ F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\FrontPage.g.cs
 F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FrontPage.xbf
 F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\FrontPage.xaml
 F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\FrontPage.xbf
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\CreateUser.xbf
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\CreateUser.g.i.cs
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\CreateUser.g.cs
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\CreateUser.xaml
+F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\obj\Debug\CreateUser.xbf

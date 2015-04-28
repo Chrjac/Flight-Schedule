@@ -62,6 +62,9 @@
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\CreateUser.xbf">
+      <PackagePath>CreateUser.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FrontPage.xbf">
       <PackagePath>FrontPage.xbf</PackagePath>
     </AppxPackagedFile>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -52,6 +53,41 @@ namespace DataLink
 
             var stream = await response.Content.ReadAsStreamAsync();
             return (Users[])jsonSerializer.ReadObject(stream);
+        }
+        public static async Task<Users> AddUserAsync(Users User)
+        {
+            MessageDialog dialog = new MessageDialog("");
+            dialog.Commands.Add(new UICommand("Lukk"));
+            string lineChange = "\n";
+            const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
+            var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
+            var jsonSerializer = new DataContractJsonSerializer(typeof(Users), jsonSerializerSettings);
+
+            var stream = new MemoryStream();
+            jsonSerializer.WriteObject(stream, User);
+            stream.Position = 0;
+            var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
+            var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
+            var response = await client.PostAsync("Users/", content);
+            if (response.IsSuccessStatusCode)
+            {
+                dialog.Title = "Success";
+                dialog.Content = User.Brukernavn + " Lagt til i databasen:";
+                    
+                   
+            }
+            else
+            {
+                dialog.Title = "Failed";
+                dialog.Content = "Kunne ikke opprette bruker i databasen";
+            }
+            await dialog.ShowAsync();
+
+            if (_UserSource._users != null)
+            {
+                _UserSource._users.Clear();
+            }
+            return User;
         }
     }
 }

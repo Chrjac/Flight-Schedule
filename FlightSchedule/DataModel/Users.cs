@@ -10,13 +10,13 @@ namespace DataModel
     {
           public Users()
         {
-
+           
         }
             public int Id { get; set; }
             public string Brukernavn { get; set; }
             public string Passord { get; set; }
-            
 
-           
+
+            public virtual ICollection<Reise> Reise { get; set; }
     }
 }

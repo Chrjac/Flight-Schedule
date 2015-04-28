@@ -76,5 +76,11 @@ namespace FlightSchedule
             userAuthentication();
             
         }
+
+        private void Button_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CreateUser));
+          
+        }
     }
 }            
