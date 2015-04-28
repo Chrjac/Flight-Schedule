@@ -19,20 +19,31 @@ namespace DataLink
     {
         private const string RestServiceUrl = "http://localhost:1912/api/";
         private static DataSource _DataSource = new DataSource();
-        private ObservableCollection<Reise> _reises;
+        private ObservableCollection<Reise> _reiser;
+        private ObservableCollection<Users> _users;
 
-        public ObservableCollection<Reise> Reises
+        public ObservableCollection<Reise> Reiser
         {
-            get { return this._reises; }
+            get { return this._reiser; }
+        }
+        public ObservableCollection<Users> Users
+        {
+            get { return this._users; }
         }
 
-        public static async Task<IEnumerable<Reise>> GetReisesAsync()
+        public static async Task<IEnumerable<Reise>> GetReiserAsync()
         {
            // if (_DataSource._reises == null) //Datacaching!!!!!!!! styr unna.
-              _DataSource._reises = new ObservableCollection<Reise>(await _DataSource.GetAllReisesAsync());
-              return _DataSource.Reises;
+              _DataSource._reiser = new ObservableCollection<Reise>(await _DataSource.GetAllReiserAsync());
+              return _DataSource.Reiser;
         }
-        public static async Task DeleteReisesAsync(int a)
+        public static async Task<IEnumerable<Users>> GetUsersAsync()
+        {
+            // if (_DataSource._reises == null) //Datacaching!!!!!!!! styr unna.
+            _DataSource._users = new ObservableCollection<Users>(await _DataSource.GetAllUsersAsync());
+            return _DataSource.Users;
+        }
+        public static async Task DeleteReiserAsync(int a)
         {
             MessageDialog dialog = new MessageDialog("");
             dialog.Commands.Add(new UICommand("Lukk"));
@@ -50,7 +61,6 @@ namespace DataLink
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
             var response = await client.DeleteAsync("Reise/" + rs.Id);
                 
-            response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong
             if (response.IsSuccessStatusCode)
             {
                 dialog.Title = "Success";
@@ -62,11 +72,9 @@ namespace DataLink
                 dialog.Content = "Kunne ikke slette flygningen fra databasen";
             }
             await dialog.ShowAsync();
-            var h = 1;
-            // a smarter approach would be to update the element (remove/add is brute force)
             
         }
-        public static async Task EditReisesAsync(Reise Reise, int Id)
+        public static async Task EditReiserAsync(Reise Reise, int Id)
         {
             MessageDialog dialog = new MessageDialog("");
             dialog.Commands.Add(new UICommand("Lukk"));
@@ -81,19 +89,23 @@ namespace DataLink
             jsonSerializer.WriteObject(stream, Reise);
             stream.Position = 0;   // Make sure to rewind the cursor before you try to read the stream
             var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
-            
+            var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };  
+            var response = await client.PutAsync(new Uri(RestServiceUrl + "Reise/" + Reise.Id), content);
 
-            var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
-            var response = await client.PutAsync(new Uri(RestServiceUrl +"Reise/"+ Reise.Id),content);
-
-            response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong         
-            // a smarter approach would be to update the element (remove/add is brute force)
-            dialog.Title = "Success";
-            dialog.Content = "Flygning endret";
+            if(response.IsSuccessStatusCode)
+            {
+                dialog.Title = "Success";
+                dialog.Content = "Flygning endret";
+            }
+            else
+            {
+                dialog.Title = "Failed";
+                dialog.Content = "Kunne ikke endre flygning";
+            }
             await dialog.ShowAsync();
 
         }
-        public static async Task<Reise>AddReisesAsync(Reise aReise)
+        public static async Task<Reise>AddReiserAsync(Reise aReise)
         {
             CancellationTokenSource ctc = new CancellationTokenSource();
             MessageDialog dialog = new MessageDialog("");
@@ -110,8 +122,7 @@ namespace DataLink
             var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
             var response = await client.PostAsync("Reise/", content);
-            var error = response.EnsureSuccessStatusCode();
-                if (response.ReasonPhrase == "Created")
+            if (response.IsSuccessStatusCode)
                 {
                     dialog.Title = "Success";
                     dialog.Content = "Flygningen er lagret i databasen: \n\n"
@@ -125,30 +136,30 @@ namespace DataLink
                 else
                 {
                     dialog.Title = "Failed";
-                    dialog.Content = "Kunne ikke lagre flygning i databasen\n\n"+error;
+                    dialog.Content = "Kunne ikke lagre flygning i databasen";
                 }
             await dialog.ShowAsync();
 
-            if (_DataSource._reises != null)
+            if (_DataSource._reiser != null)
             {
-                _DataSource._reises.Clear();
+                _DataSource._reiser.Clear();
             }
             return aReise;
-            
-
-             response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong
-            
-            // a smarter approach would be to update the element (remove/add is brute force)
-           
-
         }
-        public async Task<IEnumerable<Reise>> GetAllReisesAsync()
+        public async Task<IEnumerable<Reise>> GetAllReiserAsync()
         {
+            MessageDialog dialog = new MessageDialog("");
+            dialog.Commands.Add(new UICommand("Lukk"));
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             var response = await client.GetAsync("Reise");
-            response.EnsureSuccessStatusCode(); // Throw an exception if something went wrong
+
+            if (response.IsSuccessStatusCode) 
+            {
+                dialog.Title = "Failed";
+                dialog.Content = "Kunne ikke hente flygninger fra databasen";
+            }
 
             const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
             var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
@@ -156,9 +167,30 @@ namespace DataLink
             var jsonSerializer = new DataContractJsonSerializer(typeof(Reise[]), jsonSerializerSettings);
 
             var stream = await response.Content.ReadAsStreamAsync();
-           // string x = await response.Content.ReadAsStringAsync();
             return (Reise[])jsonSerializer.ReadObject(stream);
+        }
+        public async Task<IEnumerable<Users>> GetAllUsersAsync()
+        {
+            MessageDialog dialog = new MessageDialog("");
+            dialog.Commands.Add(new UICommand("Lukk"));
+            var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
+            var response = await client.GetAsync("Users");
+
+            if (response.IsSuccessStatusCode)
+            {
+                dialog.Title = "Failed";
+                dialog.Content = "Kunne ikke hente flygninger fra databasen";
+            }
+
+            const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
+            var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
+
+            var jsonSerializer = new DataContractJsonSerializer(typeof(Users[]), jsonSerializerSettings);
+
+            var stream = await response.Content.ReadAsStreamAsync();
+            return (Users[])jsonSerializer.ReadObject(stream);
         }
     }
 }

@@ -78,5 +78,3 @@ F:\Git\Flight-Schedule\FlightSchedule\WebService\bin\Antlr3.Runtime.pdb
 F:\Git\Flight-Schedule\FlightSchedule\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 F:\Git\Flight-Schedule\FlightSchedule\WebService\obj\Debug\WebService.dll
 F:\Git\Flight-Schedule\FlightSchedule\WebService\obj\Debug\WebService.pdb
-F:\Git\Flight-Schedule\FlightSchedule\WebService\bin\WebService.dll.CodeAnalysisLog.xml
-F:\Git\Flight-Schedule\FlightSchedule\WebService\bin\WebService.dll.lastcodeanalysissucceeded

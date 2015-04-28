@@ -11,14 +11,14 @@ namespace DataModel
         {
 
         }
-            public int Id { get; set; }
-            public string Navn { get; set; }
-            public string Dato { get; set; }
-            public string Tid { get; set; }
-            public string FlightId { get; set; }
-            public string Fra { get; set; }
-            public string Til { get; set; }
-            public string Flyselskap { get; set; }
+        public int Id { get; set; }
+        public string Navn { get; set; }
+        public string Dato { get; set; }
+        public string Tid { get; set; }
+        public string FlightId { get; set; }
+        public string Fra { get; set; }
+        public string Til { get; set; }
+        public string Flyselskap { get; set; }
 
         }
     }

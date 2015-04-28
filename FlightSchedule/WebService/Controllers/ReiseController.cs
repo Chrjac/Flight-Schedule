@@ -15,19 +15,19 @@ namespace WebService.Controllers
 {
     public class ReiseController : ApiController
     {
-        private DataAcces db = new DataAcces();
+        private DataAccess db = new DataAccess();
 
         // GET: api/Reise
         public IQueryable<Reise> GetReises()
         {    
-            return db.Reises; 
+            return db.Reiser; 
         }
 
         // GET: api/Reise/5
         [ResponseType(typeof(Reise))]
         public IHttpActionResult GetReise(int id)
         {
-            Reise reise = db.Reises.Find(id);
+            Reise reise = db.Reiser.Find(id);
             if (reise == null)
             {
                 return NotFound();
@@ -81,7 +81,7 @@ namespace WebService.Controllers
                 
             }
 
-            db.Reises.Add(reise);
+            db.Reiser.Add(reise);
             db.SaveChanges();
             db.Entry(reise).GetDatabaseValues();
             return CreatedAtRoute("DefaultApi", new { id = reise.Id }, reise);
@@ -92,13 +92,13 @@ namespace WebService.Controllers
         [ResponseType(typeof(Reise))]
         public IHttpActionResult DeleteReise(int id)
         {
-            Reise reise = db.Reises.Find(id);
+            Reise reise = db.Reiser.Find(id);
             if (reise == null)
             {
                 return NotFound();
             }
 
-            db.Reises.Remove(reise);
+            db.Reiser.Remove(reise);
             db.SaveChanges();
 
             return Ok(reise);
@@ -115,7 +115,7 @@ namespace WebService.Controllers
 
         private bool ReiseExists(int id)
         {
-            return db.Reises.Count(e => e.Id == id) > 0;
+            return db.Reiser.Count(e => e.Id == id) > 0;
         }
     }
 }

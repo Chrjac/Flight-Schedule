@@ -119,13 +119,13 @@ namespace FlightSchedule
         {
             SqlList2.Items.Clear();
 
-            var b = await DataSource.GetReisesAsync();
+            var b = await DataSource.GetReiserAsync();
 
             foreach (var item in b)
             {
                 var a = new ListViewItem();
                 a.Tag = item;
-                a.Content = item.Dato + "        " + item.Tid + "        " + item.Navn + "        " + item.FlightId + "        " + item.Fra + "        " + item.Til + "        " + item.Flyselskap;
+                a.Content = item.Dato + "        " + item.Navn +"        " + item.Fra + "        " + item.Til;
                 SqlList2.Items.Add(a);
             }
             sqllistcount.Text = "Antall reiser i listen: " + SqlList2.Items.Count.ToString();
@@ -152,6 +152,7 @@ namespace FlightSchedule
             FraHub.Header = "Fra: " + item.Fra;
             TilHub.Header = "Til: " + item.Til;
             UpdateReiseButton.Visibility = Visibility.Visible;
+
             
             
             
@@ -163,7 +164,7 @@ namespace FlightSchedule
         {
             var a = (ListViewItem)SqlList2.SelectedItems[0];
             var travel = (Reise)a.Tag;
-            await DataSource.DeleteReisesAsync(travel.Id);
+            await DataSource.DeleteReiserAsync(travel.Id);
             UpdateSqlList();
         }
 
@@ -183,7 +184,7 @@ namespace FlightSchedule
                 Til = travel.Til,
                 Flyselskap = travel.Flyselskap
             };
-            await DataSource.EditReisesAsync(UpdateReise,Id);
+            await DataSource.EditReiserAsync(UpdateReise,Id);
             UpdateSqlList();
         }
 
@@ -194,12 +195,14 @@ namespace FlightSchedule
                 editreisenavn.Visibility = Visibility.Visible;
                 NameText.Visibility = Visibility.Visible;
                 EditButton.Visibility = Visibility.Visible;
+                DeleteButton.Visibility = Visibility.Visible;
             }
             else 
             {
                 editreisenavn.Visibility = Visibility.Collapsed;
                 NameText.Visibility = Visibility.Collapsed;
                 EditButton.Visibility = Visibility.Collapsed;
+                DeleteButton.Visibility = Visibility.Collapsed;
             }
      
         }

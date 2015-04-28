@@ -103,7 +103,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AirlineCN.cs" />
     <Compile Include="AirportCN.cs" />
     <Compile Include="AirportNC.cs" />
     <Compile Include="App.xaml.cs">
@@ -113,6 +112,9 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="FrontPage.xaml.cs">
+      <DependentUpon>FrontPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Init.cs" />
     <Compile Include="LagredeReiser.xaml.cs">
@@ -136,6 +138,9 @@
     <Content Include="airports.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\ankomst.png" />
+    <Content Include="Assets\avgang.png" />
+    <Content Include="Assets\avgangLow.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
@@ -146,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FrontPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LagredeReiser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

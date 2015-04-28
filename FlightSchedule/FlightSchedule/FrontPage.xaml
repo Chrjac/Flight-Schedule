@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="FlightSchedule.FrontPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlightSchedule"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox HorizontalAlignment="Left" Name="UserName" Margin="568,411,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" PlaceholderText="Brukernavn"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="651,543,0,0" VerticalAlignment="Top" Tapped="Button_Tapped"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="568,474,0,0" VerticalAlignment="Top" Width="232" PlaceholderText="Passord"/>
+        <TextBlock HorizontalAlignment="Left" Margin="568,382,0,0" Name="LoginErrorText" FontSize="16" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="24" Width="232" TextAlignment="Center" Foreground="#FFFF1E1E"/>
+        <Image HorizontalAlignment="Left" Name="ImageBox" Height="193" Margin="228,117,0,0" VerticalAlignment="Top" Width="196" Source="Assets/ankomst.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="478,156,0,0" FontSize="72" TextWrapping="Wrap" Text="Flight Tracker" VerticalAlignment="Top" Width="430" Height="115"/>
+        <Image HorizontalAlignment="Left" x:Name="ImageBox_Copy" Height="193" Margin="947,117,0,0" VerticalAlignment="Top" Width="196" Source="Assets/avgang.png"/>
+
+    </Grid>
+</Page>

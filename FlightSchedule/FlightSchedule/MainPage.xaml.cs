@@ -105,10 +105,11 @@ namespace FlightSchedule
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var a = AirportBox.SelectedValue as string;
-            int b = ArrivalBox.SelectedIndex;
+            string airportSelector = AirportBox.SelectedValue as string;
+            int arrivalDepature = ArrivalBox.SelectedIndex;
+            
 
-            if (a == null) 
+            if (airportSelector == null) 
             {
                 AirportErrorText.Visibility = Visibility.Visible; 
                 AirportErrorText.Text = "Vennligst velg flyplass";
@@ -118,10 +119,10 @@ namespace FlightSchedule
                 AirportErrorText.Visibility = Visibility.Collapsed;
             }
 
-            if (b == -1) 
+            if (arrivalDepature == -1) 
             {
                 DepartureErrorText.Visibility = Visibility.Visible;
-                DepartureErrorText.Text = "Vennligst velg akn/avg"; 
+                DepartureErrorText.Text = "Vennligst velg akn/avg";
                 
             }
             else 
@@ -129,7 +130,7 @@ namespace FlightSchedule
                 DepartureErrorText.Visibility = Visibility.Collapsed;
             }
 
-            if (a != "null" && b != -1) {
+            if (airportSelector != "null" && arrivalDepature != -1) {
                 Main();
                 ListView.IsEnabled = true;
             }
@@ -138,21 +139,20 @@ namespace FlightSchedule
         private void ListView_Tapped(object sender, TappedRoutedEventArgs e)
         {
 
-            int ArrivalDeparture = ArrivalBox.SelectedIndex;
             var a = (ListViewItem)ListView.SelectedItem;
             var travel = (Reise)a.Tag;
             var date = DateTime.Now.ToString("dd.MM.yy"); 
 
-            HubSection.Header = travel.FlightId;
-            hubhead.Header = date;
-            hubhead1.Header = travel.Tid;
-            hubhead2.Header = travel.Fra;
-            hubhead3.Header = travel.Til;
-            hubhead4.Header = travel.Flyselskap;
-       
-            HubSection.Visibility = Visibility.Visible;
+            FlightText.Text = travel.FlightId;
+            DateText.Text = date;
+            TimeText.Text = travel.Tid;
+            FromText.Text = travel.Fra;
+            ToText.Text = travel.Til;
+            AirlineText.Text = travel.Flyselskap;
+            
             StoreButton.Visibility = Visibility.Visible;
             reisenavntext.Visibility = Visibility.Visible;
+            block.Visibility = Visibility.Collapsed;
    
         }
 
@@ -167,7 +167,7 @@ namespace FlightSchedule
            travel.Dato = DateTime.Now.ToString("dd.MM.yy");
            if (reisenavntext.Text != "") 
            {
-               await DataSource.AddReisesAsync(travel);
+               await DataSource.AddReiserAsync(travel);
                NameErrorText.Visibility = Visibility.Collapsed;
            }
            else 

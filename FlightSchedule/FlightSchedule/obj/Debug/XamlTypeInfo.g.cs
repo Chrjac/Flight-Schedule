@@ -124,27 +124,29 @@ namespace FlightSchedule.FlightSchedule_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "FlightSchedule.LagredeReiser";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "FlightSchedule.FrontPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "FlightSchedule.Common.ObservableDictionary";
-            _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "String";
-            _typeNameTable[6] = "FlightSchedule.Common.NavigationHelper";
-            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[8] = "FlightSchedule.MainPage";
+            _typeNameTable[3] = "FlightSchedule.LagredeReiser";
+            _typeNameTable[4] = "FlightSchedule.Common.ObservableDictionary";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "FlightSchedule.Common.NavigationHelper";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "FlightSchedule.MainPage";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::FlightSchedule.LagredeReiser);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::FlightSchedule.FrontPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::FlightSchedule.Common.ObservableDictionary);
-            _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::System.String);
-            _typeTable[6] = typeof(global::FlightSchedule.Common.NavigationHelper);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[8] = typeof(global::FlightSchedule.MainPage);
+            _typeTable[3] = typeof(global::FlightSchedule.LagredeReiser);
+            _typeTable[4] = typeof(global::FlightSchedule.Common.ObservableDictionary);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::FlightSchedule.Common.NavigationHelper);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::FlightSchedule.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,10 +181,11 @@ namespace FlightSchedule.FlightSchedule_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_LagredeReiser() { return new global::FlightSchedule.LagredeReiser(); }
-        private object Activate_3_ObservableDictionary() { return new global::FlightSchedule.Common.ObservableDictionary(); }
-        private object Activate_8_MainPage() { return new global::FlightSchedule.MainPage(); }
-        private void MapAdd_3_ObservableDictionary(object instance, object key, object item)
+        private object Activate_0_FrontPage() { return new global::FlightSchedule.FrontPage(); }
+        private object Activate_3_LagredeReiser() { return new global::FlightSchedule.LagredeReiser(); }
+        private object Activate_4_ObservableDictionary() { return new global::FlightSchedule.Common.ObservableDictionary(); }
+        private object Activate_9_MainPage() { return new global::FlightSchedule.MainPage(); }
+        private void MapAdd_4_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -200,11 +203,9 @@ namespace FlightSchedule.FlightSchedule_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  FlightSchedule.LagredeReiser
+            case 0:   //  FlightSchedule.FrontPage
                 userType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_LagredeReiser;
-                userType.AddMemberName("DefaultViewModel");
-                userType.AddMemberName("NavigationHelper");
+                userType.Activator = Activate_0_FrontPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -217,36 +218,45 @@ namespace FlightSchedule.FlightSchedule_XamlTypeInfo
                 xamlType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  FlightSchedule.Common.ObservableDictionary
+            case 3:   //  FlightSchedule.LagredeReiser
+                userType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_LagredeReiser;
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  FlightSchedule.Common.ObservableDictionary
                 userType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_3_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_4_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Object
+            case 5:   //  Object
                 xamlType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  String
+            case 6:   //  String
                 xamlType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  FlightSchedule.Common.NavigationHelper
+            case 7:   //  FlightSchedule.Common.NavigationHelper
                 userType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.DependencyObject
+            case 8:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  FlightSchedule.MainPage
+            case 9:   //  FlightSchedule.MainPage
                 userType = new global::FlightSchedule.FlightSchedule_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_9_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

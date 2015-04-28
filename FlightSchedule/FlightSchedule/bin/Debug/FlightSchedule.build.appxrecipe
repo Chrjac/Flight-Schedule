@@ -34,6 +34,15 @@
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\airports.xml">
       <PackagePath>airports.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\ankomst.png">
+      <PackagePath>Assets\ankomst.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\avgang.png">
+      <PackagePath>Assets\avgang.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\avgangLow.png">
+      <PackagePath>Assets\avgangLow.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -52,6 +61,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FrontPage.xbf">
+      <PackagePath>FrontPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\LagredeReiser.xbf">
       <PackagePath>LagredeReiser.xbf</PackagePath>

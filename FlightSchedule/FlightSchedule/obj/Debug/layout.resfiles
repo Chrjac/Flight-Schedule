@@ -1,10 +1,14 @@
 airlines.xml
 airports.xml
+Assets\ankomst.png
+Assets\avgang.png
+Assets\avgangLow.png
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
 Assets\StoreLogo.scale-100.png
 App.xbf
 FlightSchedule.xr.xml
+FrontPage.xbf
 LagredeReiser.xbf
 MainPage.xbf

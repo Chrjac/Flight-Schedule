@@ -7,5 +7,4 @@ F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll
 F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.pdb
 F:\Git\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.dll
 F:\Git\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.pdb
-F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll.CodeAnalysisLog.xml
-F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll.lastcodeanalysissucceeded
+F:\Git\Flight-Schedule\FlightSchedule\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache

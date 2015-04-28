@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FF1D1D1D">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="206*"/>
             <ColumnDefinition Width="1161*"/>
@@ -16,33 +16,6 @@
         <ComboBox x:Name="AirportBox" HorizontalAlignment="Left" Margin="90,116,0,0" VerticalAlignment="Top" Width="136" IsSynchronizedWithCurrentItem="False" PlaceholderText="Velg Flyplass" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="ArrivalBox" HorizontalAlignment="Left" Margin="90,172,0,0" VerticalAlignment="Top" Width="136" PlaceholderText="Velg Ank/Avg" Grid.ColumnSpan="2"/>
         <ListView x:ConnectionId='2' x:Name="ListView" Grid.Column="1" HorizontalAlignment="Left" Height="408" Margin="41,47,0,0" VerticalAlignment="Top" Width="518" Foreground="White" Background="#FF3E3E3E" Opacity="0.75" BorderBrush="#FF898989"                         />
-        <Hub x:Name="HubSection" Header="Hub" HorizontalAlignment="Left" Margin="135,483,0,0" VerticalAlignment="Top" Visibility="Collapsed" Grid.ColumnSpan="2" >
-            <HubSection x:Name="hubhead" Header="HubSection 0">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-            <HubSection x:Name="hubhead1" Header="HubSection 1">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-            <HubSection x:Name="hubhead2" Header="HubSection 1">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-            <HubSection x:Name="hubhead3" Header="HubSection 1">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-            <HubSection x:Name="hubhead4" Header="HubSection 1">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-        </Hub>
         <TextBlock Visibility="Collapsed" x:Name="ToBox" Grid.Column="1" HorizontalAlignment="Left" Margin="390,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="TimeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="66,629,0,0" TextWrapping="Wrap" Text="Tid" VerticalAlignment="Top" Height="26" Width="87"/>
         <TextBlock Visibility="Collapsed" x:Name="FromBox" Grid.Column="1" HorizontalAlignment="Left" Margin="233,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="87"/>
@@ -53,6 +26,19 @@
         <TextBlock x:Name="DepartureErrorText" HorizontalAlignment="Left" Margin="56,154,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="170" TextAlignment="Right" Visibility="Collapsed"  Foreground="#FFFF2121"/>
         <TextBox x:Name="reisenavntext" Grid.Column="1" HorizontalAlignment="Left" Margin="579,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Visibility="Collapsed" PlaceholderText="Angi reisenavn"/>
         <TextBlock x:Name="NameErrorText" HorizontalAlignment="Left" Margin="579,191,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="170" Visibility="Collapsed"  Foreground="#FFFF0B0B" Grid.Column="1"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="205,512,0,0" TextWrapping="Wrap" Text="Avgang:" VerticalAlignment="Top" Height="31" Width="83" TextAlignment="Right" FontSize="14"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="224,543,0,0" TextWrapping="Wrap" Text="Flight:" VerticalAlignment="Top" Height="31" Width="64" TextAlignment="Right" FontSize="14"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="252,574,0,0" TextWrapping="Wrap" Text="Fra:" VerticalAlignment="Top" Height="31" Width="36" TextAlignment="Right" FontSize="14"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="260,605,0,0" TextWrapping="Wrap" Text="Til:" VerticalAlignment="Top" Height="31" Width="28" TextAlignment="Right" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="232,481,0,0" TextWrapping="Wrap" Text="Dato:" VerticalAlignment="Top" Height="31" Grid.Column="1" Width="56" TextAlignment="Right" FontSize="14"/>
+        <TextBlock x:Name="DateText" Grid.Column="1" HorizontalAlignment="Left" Margin="314,481,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96" FontSize="16"/>
+        <TextBlock x:Name="TimeText" Grid.Column="1" HorizontalAlignment="Left" Margin="314,512,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96" FontSize="16"/>
+        <TextBlock x:Name="FlightText" Grid.Column="1" HorizontalAlignment="Left" Margin="314,543,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96" FontSize="16"/>
+        <TextBlock x:Name="FromText" Grid.Column="1" HorizontalAlignment="Left" Margin="314,574,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96" FontSize="16"/>
+        <TextBlock x:Name="ToText" Grid.Column="1" HorizontalAlignment="Left" Margin="314,605,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96" FontSize="16"/>
+        <TextBlock x:Name="AirlineText" Grid.Column="1" HorizontalAlignment="Left" Margin="314,636,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96" FontSize="16"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="179,636,0,0" TextWrapping="Wrap" Text="Flyselskap:" VerticalAlignment="Top" Height="19" Width="109" TextAlignment="Right" FontSize="14"/>
+        <Rectangle x:Name="block" Grid.Column="1" HorizontalAlignment="Left" Height="187" Margin="205,481,0,0" Stroke="#FF1D1D1D" VerticalAlignment="Top" Width="180" Fill="#FF1D1D1D"/>
     </Grid>
 </Page>
 

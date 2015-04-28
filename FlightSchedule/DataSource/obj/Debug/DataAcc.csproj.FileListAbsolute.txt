@@ -22,5 +22,3 @@ F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\EntityFramework.SqlSe
 F:\Git\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataAcc.csprojResolveAssemblyReference.cache
 F:\Git\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataSource.dll
 F:\Git\Flight-Schedule\FlightSchedule\DataSource\obj\Debug\DataSource.pdb
-F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataSource.dll.CodeAnalysisLog.xml
-F:\Git\Flight-Schedule\FlightSchedule\DataSource\bin\Debug\DataSource.dll.lastcodeanalysissucceeded
