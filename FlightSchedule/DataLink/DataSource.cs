@@ -20,42 +20,31 @@ namespace DataLink
         private const string RestServiceUrl = "http://localhost:1912/api/";
         private static DataSource _DataSource = new DataSource();
         private ObservableCollection<Reise> _reiser;
-        private ObservableCollection<Users> _users;
 
         public ObservableCollection<Reise> Reiser
         {
             get { return this._reiser; }
         }
-        public ObservableCollection<Users> Users
-        {
-            get { return this._users; }
-        }
-
+        
         public static async Task<IEnumerable<Reise>> GetReiserAsync()
         {
-           // if (_DataSource._reises == null) //Datacaching!!!!!!!! styr unna.
+           // if (_DataSource._reises == null) //Datacaching
               _DataSource._reiser = new ObservableCollection<Reise>(await _DataSource.GetAllReiserAsync());
               return _DataSource.Reiser;
         }
-        public static async Task<IEnumerable<Users>> GetUsersAsync()
-        {
-            // if (_DataSource._reises == null) //Datacaching!!!!!!!! styr unna.
-            _DataSource._users = new ObservableCollection<Users>(await _DataSource.GetAllUsersAsync());
-            return _DataSource.Users;
-        }
+        
         public static async Task DeleteReiserAsync(int a)
         {
             MessageDialog dialog = new MessageDialog("");
             dialog.Commands.Add(new UICommand("Lukk"));
             Reise rs = new Reise();
             rs.Id = a;
-            // to update the database, if OK, then proceed to update the local data
             const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
             var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
             var jsonSerializer = new DataContractJsonSerializer(typeof(Reise), jsonSerializerSettings);
 
             var stream = new MemoryStream();
-            stream.Position = 0;   // Make sure to rewind the cursor before you try to read the stream
+            stream.Position = 0;
             var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
 
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
@@ -80,14 +69,13 @@ namespace DataLink
             dialog.Commands.Add(new UICommand("Lukk"));
             Reise rs = new Reise();
             Reise.Id = Id;
-            // to update the database, if OK, then proceed to update the local data
             const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
             var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
             var jsonSerializer = new DataContractJsonSerializer(typeof(Reise), jsonSerializerSettings);
 
             var stream = new MemoryStream();
             jsonSerializer.WriteObject(stream, Reise);
-            stream.Position = 0;   // Make sure to rewind the cursor before you try to read the stream
+            stream.Position = 0;
             var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };  
             var response = await client.PutAsync(new Uri(RestServiceUrl + "Reise/" + Reise.Id), content);
@@ -111,14 +99,13 @@ namespace DataLink
             MessageDialog dialog = new MessageDialog("");
             dialog.Commands.Add(new UICommand("Lukk"));
             string lineChange = "\n";
-            // to update the database, if OK, then proceed to update the local data
             const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
             var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
             var jsonSerializer = new DataContractJsonSerializer(typeof(Reise), jsonSerializerSettings);
 
             var stream = new MemoryStream();
             jsonSerializer.WriteObject(stream, aReise);
-            stream.Position = 0;   // Make sure to rewind the cursor before you try to read the stream
+            stream.Position = 0;
             var content = new StringContent(new StreamReader(stream).ReadToEnd(), System.Text.Encoding.UTF8, "application/json");
             var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
             var response = await client.PostAsync("Reise/", content);
@@ -169,28 +156,6 @@ namespace DataLink
             var stream = await response.Content.ReadAsStreamAsync();
             return (Reise[])jsonSerializer.ReadObject(stream);
         }
-        public async Task<IEnumerable<Users>> GetAllUsersAsync()
-        {
-            MessageDialog dialog = new MessageDialog("");
-            dialog.Commands.Add(new UICommand("Lukk"));
-            var client = new HttpClient { BaseAddress = new Uri(RestServiceUrl) };
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            var response = await client.GetAsync("Users");
-
-            if (response.IsSuccessStatusCode)
-            {
-                dialog.Title = "Failed";
-                dialog.Content = "Kunne ikke hente flygninger fra databasen";
-            }
-
-            const string dateTimeFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
-            var jsonSerializerSettings = new DataContractJsonSerializerSettings { DateTimeFormat = new DateTimeFormat(dateTimeFormat) };
-
-            var jsonSerializer = new DataContractJsonSerializer(typeof(Users[]), jsonSerializerSettings);
-
-            var stream = await response.Content.ReadAsStreamAsync();
-            return (Users[])jsonSerializer.ReadObject(stream);
-        }
+       
     }
 }

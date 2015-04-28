@@ -1,8 +1,8 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="f:\git\flight-schedule\flightschedule\flightschedule\obj\debug\intermediatexaml\flightschedule.exe" HashGuid="de0dff50-d15b-5e12-eb9b-e4bc455322e0" />
+    <LocalAssembly PathName="f:\git\flight-schedule\flightschedule\flightschedule\obj\debug\intermediatexaml\flightschedule.exe" HashGuid="8a17582e-8870-04fc-f777-77874ae921f3" />
     <ReferenceAssembly PathName="f:\git\flight-schedule\flightschedule\avinorrequest\bin\debug\avinorrequest.dll" HashGuid="a532133a-de07-e30b-0be8-3a3393405a81" />
-    <ReferenceAssembly PathName="f:\git\flight-schedule\flightschedule\datalink\bin\debug\datalink.dll" HashGuid="59c0e662-9cb6-8675-e9ea-fb4a56de99f1" />
+    <ReferenceAssembly PathName="f:\git\flight-schedule\flightschedule\datalink\bin\debug\datalink.dll" HashGuid="85ac9203-0bb3-0ce7-7d9d-3c1f42e8b4f5" />
     <ReferenceAssembly PathName="f:\git\flight-schedule\flightschedule\datamodel\bin\debug\datamodel.dll" HashGuid="a69883c3-1d4f-9b79-4f6e-86b4af30e326" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

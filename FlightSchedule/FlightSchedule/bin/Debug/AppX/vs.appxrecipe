@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\FlightSchedule.exe">
       <PackagePath>FlightSchedule.exe</PackagePath>
-      <Modified>2015-04-27T23:53:17.958</Modified>
+      <Modified>2015-04-28T01:04:32.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\AviNorRequest\bin\Debug\AviNorRequest.dll">
       <PackagePath>AviNorRequest.dll</PackagePath>
@@ -34,7 +34,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\DataLink\bin\Debug\DataLink.dll">
       <PackagePath>DataLink.dll</PackagePath>
-      <Modified>2015-04-27T21:59:17.583</Modified>
+      <Modified>2015-04-28T01:04:31.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\DataModel\bin\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
@@ -46,7 +46,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\airports.xml">
       <PackagePath>airports.xml</PackagePath>
-      <Modified>2015-04-27T14:35:01.694</Modified>
+      <Modified>2015-04-28T00:51:51.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\Assets\ankomst.png">
       <PackagePath>Assets\ankomst.png</PackagePath>
@@ -102,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Git\Flight-Schedule\FlightSchedule\FlightSchedule\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-04-27T23:50:23.512</Modified>
+      <Modified>2015-04-28T01:04:32.904</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

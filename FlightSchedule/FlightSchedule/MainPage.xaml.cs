@@ -49,42 +49,43 @@ namespace FlightSchedule
         public void Main()
         {
             ListView.Items.Clear();
-            string søkefelt = AirportBox.SelectedValue as string;
+            string searchField = AirportBox.SelectedValue as string;
             int ArrivalDeparture = ArrivalBox.SelectedIndex;
+           
             string Arrival = "A";
             string Departure = "D";
-            string i = AirportNC.airportSearchCode(søkefelt);
+            string airportCode = AirportNC.airportSearchCode(searchField);
 
             string ad = (ArrivalDeparture == 1) ? Departure : Arrival;
+            
+            string aviNorResponse = AviNorRequest.Request.DoRequest(airportCode, ad);
+            XDocument document = XDocument.Parse(aviNorResponse);
+            XDocument doccheckAirline = XDocument.Load("airlines.xml");
 
-            string x = AviNorRequest.Request.DoRequest(i, ad);
-            XDocument doc = XDocument.Parse(x);
-            foreach (XElement flight in doc.Descendants("flight"))
+            foreach (XElement flight in document.Descendants("flight"))
             {
                 string airline = flight.Element("airline").Value;
                 string flightId = flight.Element("flight_id").Value;
-                string schedule_time = flight.Element("schedule_time").Value;
+                string schedule_time = flight.Element("schedule_time").Value.Substring(11).TrimEnd('Z');
                 string airport = flight.Element("airport").Value;
-                string schedule_time_sub = schedule_time.Substring(11);
-                string schedule_time_sub2 = schedule_time_sub.TrimEnd('Z');
                 string airportName = AirportCN.airportSearchName(airport);
 
-                XDocument doccheckAirline = XDocument.Load("airlines.xml");
-                foreach (XElement Alcheck in doccheckAirline.Descendants("airlineName"))
+                foreach (XElement airLineCheck in doccheckAirline.Descendants("airlineName"))
                 {
-                    string test = Alcheck.Attribute("code").Value;
-                    if (test == airline)
+                    string AirLineName;
+                    string airLineCode = airLineCheck.Attribute("code").Value;
+                    if (airLineCode == airline)
                     {
-                        test = Alcheck.Attribute("name").Value;
+                        AirLineName = airLineCheck.Attribute("name").Value;
                         string from;
                         string to;
                         if (ad == Arrival) {
                             from = airportName;
-                            to = AirportBox.SelectedValue as string;
+                            to = searchField;
                         }
                         else
                         {
-                            from = AirportBox.SelectedValue as string;
+                            from = searchField;
                             to = airportName;
                         }
                         var a = new ListViewItem();                  
@@ -93,10 +94,10 @@ namespace FlightSchedule
                             FlightId = flightId,
                             Til = to,
                             Fra = from,
-                            Flyselskap = test,
-                            Tid = schedule_time_sub2
+                            Flyselskap = AirLineName,
+                            Tid = schedule_time
                         };
-                        a.Content = schedule_time_sub2 + "          " + flightId + "          " + airportName + "          " + test;
+                        a.Content = schedule_time + "          " + flightId + "          " + airportName + "          " + AirLineName;
                         ListView.Items.Add(a);
                     }
                     }

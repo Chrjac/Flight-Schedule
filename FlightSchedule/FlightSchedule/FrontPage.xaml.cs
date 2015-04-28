@@ -47,7 +47,7 @@ namespace FlightSchedule
             string uN = UserName.Text;
             var pW = Password.Password;
 
-            var userCheck = await DataSource.GetUsersAsync();
+            var userCheck = await UserSource.GetUsersAsync();
             
             foreach (var item in userCheck)
             {
